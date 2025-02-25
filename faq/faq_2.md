@@ -1,8 +1,5 @@
 ---
-title: "자꾸 버그가 생기는데요"
+title: "아침 운동과 저녁 운동 중 어느 것이 더 효과적인가요?"
 ---
 
-While we run tests covering most conceivable situations before release, bugs still happen.
-Send us a file of Debug Dump Binaries (DDBs) so that we can provide technical support. The DDB file is safely encrypted and includes all the compilation steps and error logs. </br></br>
-
-Please contact our <a href="mailto:support@rebellions.ai" class="underline">Technical Support Team</a>.
+아침 운동은 신진대사를 촉진하고 하루를 활기차게 시작하는 데 도움이 되며, 저녁 운동은 하루 동안 쌓인 스트레스를 해소하고 근육 회복을 돕는 장점이 있습니다. 본인의 생활 패턴과 목표에 맞춰 선택하는 것이 가장 좋습니다.

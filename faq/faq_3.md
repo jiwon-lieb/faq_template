@@ -1,9 +1,5 @@
 ---
-title: "샘플 코드는 어디에 있나요?"
+title: "카페인이 수면에 미치는 영향은 무엇인가요?"
 ---
 
-Rebellions Model Zoo provides code examples for different models that you can optimize and test in our RBLN online documentation. You can find the code examples for each model on the following pages under the Task column:</br></br>
-
-- HuggingFace
-- Pytorch
-- Tensorflow
+카페인은 중추신경계를 자극하여 각성 상태를 유지하게 합니다. 개인에 따라 다르지만, 일반적으로 섭취 후 4~6시간 동안 효과가 지속될 수 있으며, 늦은 오후나 저녁에 섭취하면 수면의 질이 저하될 수 있습니다.

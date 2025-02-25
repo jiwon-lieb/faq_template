@@ -1,12 +1,5 @@
 ---
-title: "RBLN SDK를 어떻게 사용하나요?"
+title: "하루에 얼마나 물을 마셔야 하나요?"
 ---
 
-RBLN SDK를 사용하기 위해서는 RBLN 드라이버(driver), 컴파일러(compiler), 모델주(Model Zoo)의 적절한 버전을 설치해야 합니다.
-
-1. RBLN 드라이버를 설치합니다.
-2. RBLN 컴파일러를 설치합니다.
-3. 모델주를 확인하여 원하는 모델이 RBLN SDK로 지원되는지 확인합니다.
-4. 샘플코드를 실행하여 문제가 없는지 확인합니다.
-
-더 자세한 내용은 <a href="https://rebellions.ai/docs/sdk" class="underline" target="_blank">SDK Installation Guide</a>에서 확인해주세요.
+일반적으로 성인은 하루에 약 2리터(8잔)의 물을 마시는 것이 권장됩니다. 하지만 개인의 체중, 활동량, 환경에 따라 다를 수 있으므로 갈증을 느끼기 전에 수분을 충분히 섭취하는 것이 중요합니다.
