@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ | 고객지원</title>
+  <title>FAQ | Customer Support </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
     body {
-      font-family: 'Pretendard', sans-serif;
+      font-family: 'Playfair Display', serif;
       background: url('/assets/background.jpeg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
@@ -88,7 +88,7 @@
   <!-- Fixed Logo -->
   <header class="absolute top-6 left-12">
     <a href="/">
-      <img src="/assets/logo_white.png" alt="Rebellions Logo" class="h-7">
+      <img src="/assets/logo_white.png" alt="Logo" class="h-7">
     </a>
   </header>
 
@@ -97,7 +97,7 @@
   <!-- Left Column: Categories -->
   <div class="flex flex-col w-[260px] justify-start mx-[10px] pr-4">
     <!-- FAQ Title -->
-    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mb-[10px] text-[#3B434B]">자주 묻는 질문</h2>
+    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mb-[10px] text-[#3B434B]">By Topics</h2>
     <!-- FAQ Categories -->
     <div class="flex flex-col gap-2 min-w-[220px] max-h-[500px] overflow-y-auto pr-2" id="faq-categories"></div>
   </div>
@@ -106,13 +106,13 @@
     <!-- FAQ Contact -->
     <div class="text-lg font-semibold text-[#3B434B] flex items-center whitespace-nowrap my-[10px] mb-[9px] p-[9px]">
       <p>
-        찾으시는 질문이 없나요? 
-        <a href="mailto:contact@rebellions.ai" class="text-gray-800 hover:text-gray-600 underline">여기</a>로 연락 주세요!
+        Want to know me more? Contact me
+        <a href="mailto:contact@jiwonkwak.co" class="text-gray-800 hover:text-gray-600 underline">here</a>
       </p>
       <!-- Search box -->
       <div class="border border-gray-300 rounded-full ml-6 flex justify-center items-center px-4 py-2 shadow-sm w-[250px] mt-53">
         <input type="text" 
-              placeholder="검색어를 입력하세요" 
+              placeholder="Enter a search word" 
               class="text-sm text-center w-full px-3 py-2 w-36 focus:outline-none" 
             id="faqSearchInput"
             onkeypress="handleKeyPress(event)">
@@ -120,7 +120,7 @@
       <button 
           class="ml-2 px-4 py-2 text-sm bg-[#23292F] text-[#EFF2F5] font-medium rounded-full shadow-md transition-all hover:bg-[#808A96] hover:text-[#F6F8FA]"
           onclick="performSearch()">
-          🔍 검색
+          🔍 Search
       </button>
       
     </div>
@@ -129,23 +129,21 @@
 </div>
 
   <!-- Fixed Footer -->
-  <footer class="left-0 w-full text-center text-white p-4">
+  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4">
     <p class="text-sm">
-      📍 <a href="https://maps.app.goo.gl/dEBLsvBE2L9BrmWEA" target="_blank" class="underline">
-        경기도 성남시 분당구 정자동 9번지 102동 801호
-      </a>
+      <a>Made with ♥ by Baddie Jiwon</a>
     </p>
     <p class="text-sm">
-      <a href="mailto:contact@rebellions.ai" class="underline">📧 contact@rebellions.ai</a>
+      <a href="mailto:contact@rebellions.ai" class="underline">contact@jiwonkwak.co</a>
     </p>
     <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="https://rebellions.ai" target="_blank" class="hover:text-gray-300">Website</a>
-      <a href="https://www.linkedin.com/company/rebellions-ai" target="_blank"
+      <a href="https://jiwonkwak.co" target="_blank" class="hover:text-gray-300">Website</a>
+      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
         class="hover:text-gray-300 flex items-center space-x-1">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
         <span>LinkedIn</span>
       </a>
-      <a href="https://x.com/RebellionsAI" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
+      <a href="#" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
         <img src="/assets/X.svg" alt="X" class="h-5 w-5">
         <span>Twitter</span>
       </a>

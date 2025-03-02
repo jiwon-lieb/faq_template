@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>무엇을 도와드릴까요? | 고객지원</title>
+  <title>Customer Support</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
     body {
-      font-family: 'Pretendard', sans-serif;
+      font-family: 'Playfair Display', serif;
       background: url('/assets/background.jpeg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
@@ -22,35 +22,43 @@
     }
 
     .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 24px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-radius: 50px;
-      box-shadow: 0 5px 10px rgba(59, 67, 75, 0.15);
-      transition: all 0.3s ease-in-out;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
 
+/* Primary Button (Matte Black) */
     .btn-primary {
-      background: #3B434B;
-      color: #F6F8FA;
+        background: #1E1E1E;
+        color: #EAEAEA;
+        border-color: #3B3B3B;
     }
 
     .btn-primary:hover {
-      background: #3B434B;
-      transform: translateY(-2px);
+        background: #2C2C2C;
+        transform: translateY(-2px);
+        border-color: #5A5A5A;
+        box-shadow: 0 6px 12px rgba(90, 90, 90, 0.4);
     }
 
+    /* Secondary Button (Gunmetal Grey) */
     .btn-secondary {
-      background: #E2EBF2;
-      color: #3B434B;
+        background: #3B3B3B;
+        color: #EAEAEA;
+        border-color: #5A5A5A;
     }
 
     .btn-secondary:hover {
-      background: #D9E4ED;
-      transform: translateY(-2px);
+        background: #5A5A5A;
+        transform: translateY(-2px);
+        border-color: #8C8C8C;
     }
 
     .search-bar {
@@ -104,13 +112,13 @@
   </header>
 
   <div
-    class="main-container flex flex-col items-center justify-center text-center p-10 bg-white shadow-xl rounded-2xl border border-[#E2EBF2] max-w-xl w-full relative mt-[120px] mb-[120px]">
+    class="main-container flex flex-col items-center justify-center text-center p-10 bg-[#F6F6F6] shadow-xl rounded-2xl border border-[#808080] max-w-xl w-full relative mt-[120px] mb-[120px]">
 
     <!-- Secondary Logo Above Title -->
     <img src="/assets/logo.png" alt="Black Logo" class="h-6 mb-4">
 
-    <h1 class="text-4xl font-extrabold text-[#3B434B] mb-6 mt-4">
-      무엇을 도와드릴까요?
+    <h1 class="text-4xl font-extrabold text-[#1C1C1E] mb-6 mt-4">
+      How can I help you?
     </h1>
 
     <!-- Search Bar -->
@@ -121,7 +129,7 @@
         const query = this.searchQuery.trim().toLowerCase();
         this.searchResults = ''; // Reset previous messages
         if (!query) {
-          this.searchResults = '⚠️ 검색어를 입력해주세요.';
+          this.searchResults = '⚠️ Enter a search word.';
           return;
         }
 
@@ -143,21 +151,21 @@
           });
 
           if (matches.length === 0) {
-            this.searchResults = `❌ <span class='text-s text-red-500'>&quot;${this.searchQuery}&quot; 검색 결과를 찾을 수 없습니다. </span>`;
+            this.searchResults = `❌ <span class='text-s text-red-500'>No results for &quot;${this.searchQuery}&quot;. </span>`;
           } else {
             window.location.href = `search.html?query=${encodeURIComponent(query)}`;
           }
 
         } catch (error) {
           console.error('Error fetching FAQs:', error);
-          this.searchResults = `❌ FAQ 데이터를 불러오는 중 오류가 발생했습니다.`;
+          this.searchResults = `❌ An error occurred while retrieving data.`;
         }
       }
 
     }" x-on:submit.prevent="await performSearch" class="w-full max-w-lg text-center">
 
     <!-- Search Input -->
-    <input autocomplete="off" x-model="searchQuery" type="text" id="searchQuery" placeholder="검색어를 입력하세요"
+    <input autocomplete="off" x-model="searchQuery" type="text" id="searchQuery" placeholder="Search by keyword"
       class="search-bar mb-3">
 
     <!-- Search Button -->
@@ -166,10 +174,10 @@
       type="submit" 
       x-bind:disabled="searchQuery.length === 0" 
       x-bind:class="searchQuery.length > 0 
-        ? 'bg-[#23292F] text-[#EFF2F5] hover:bg-[#808A96] hover:text-[#F6F8FA] transition-all' 
-        : 'bg-[#EFF2F5] text-[#BBC4CF] cursor-not-allowed'"
+        ? 'bg-[#6A0DAD] border-[#6A0DAD] text-[#EDEDED] hover:bg-[#9B30FF] hover:text-[#808080] transition-all' 
+        : 'bg-[#808080] border-[#808080] text-gray-200 cursor-not-allowed'"
       class="btn mb-3 mx-auto px-6 py-3 rounded-full shadow-md font-semibold text-lg transition-all">
-      🔍 검색
+      🔍 Search
   </button>
 
     <!-- Search Results Message (Appears Below Button Without Reloading) -->
@@ -180,17 +188,17 @@
 
 
     <!-- Subtitle -->
-    <p class="text-lg text-[#808A96] mb-6">
-      자주 묻는 질문을 확인하거나, 고객 지원을 요청하세요.
+    <p class="text-lg text-[#EDEDED] mb-6">
+      Browse and contact me!
     </p>
 
     <!-- CTA Buttons -->
     <div class="flex space-x-6">
       <a href="/faq" class="btn btn-primary">
-        📖 FAQ 보기
+        📖 Read about me
       </a>
-      <a href="mailto:contact@rebellions.ai" class="btn btn-secondary">
-        📨 고객 지원 요청
+      <a href="mailto:contact@jiwonkwak.co" class="btn btn-secondary">
+        📨 Contact me
       </a>
     </div>
 
@@ -199,21 +207,19 @@
   <!-- Footer (Fixed at bottom, flush with bottom edge) -->
   <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4">
     <p class="text-sm">
-      📍 <a href="https://maps.app.goo.gl/dEBLsvBE2L9BrmWEA" target="_blank" class="underline">
-        경기도 성남시 분당구 정자동 9번지 102동 801호
-      </a>
+      <a>Made with ♥ by Baddie Jiwon</a>
     </p>
     <p class="text-sm">
-      <a href="mailto:contact@rebellions.ai" class="underline">📧 contact@rebellions.ai</a>
+      <a href="mailto:contact@rebellions.ai" class="underline">contact@jiwonkwak.co</a>
     </p>
     <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="https://rebellions.ai" target="_blank" class="hover:text-gray-300">Website</a>
-      <a href="https://www.linkedin.com/company/rebellions-ai" target="_blank"
+      <a href="https://jiwonkwak.co" target="_blank" class="hover:text-gray-300">Website</a>
+      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
         class="hover:text-gray-300 flex items-center space-x-1">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
         <span>LinkedIn</span>
       </a>
-      <a href="https://x.com/RebellionsAI" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
+      <a href="#" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
         <img src="/assets/X.svg" alt="X" class="h-5 w-5">
         <span>Twitter</span>
       </a>
