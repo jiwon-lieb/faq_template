@@ -10,99 +10,66 @@
 
     body {
       font-family: 'Pretendard', sans-serif;
-      background-color: #EFF2F5;
-      color: #3B434B;
-      margin: 0;
-      padding: 0;
+      background: url('/assets/background.jpeg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       flex-direction: column;
+      align-items: stretch;
       align-items: center;
       min-height: 100vh;
-    }
-
-    /* Ensure line breaks in answer text */
-    .answer-body {
-      white-space: pre-line;
-    }
-
-    .faq-list {
+      padding: 0px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-top: 10px;
-      max-height: 500px;
-      overflow-y: auto;
-      padding-right: 10px;
-    }
-
-    a {
-      text-decoration: underline;
-    }
-
-    .faq-container {
-      width: 100%;
-      max-width: 800px;
-      margin-top: 100px;
-      padding-bottom: 100px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .faq-item {
-      background: white;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 10px rgba(59, 67, 75, 0.15);
-      border-left: 4px solid #808A96;
-    }
-
-    .faq-question {
-      font-size: 1.2rem;
-      font-weight: 600;
-      padding: 16px;
-      cursor: pointer;
-      transition: background 0.3s ease-in-out;
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-    }
-
-    .faq-question:hover {
-      background: #D9E4ED;
-    }
-
-    /* Answer container: hidden by default, with proper padding and restricted width */
-    .faq-answer {
-      display: none;
-      padding: 16px;
-      font-size: 1rem;
-      line-height: 1.5;
-      border-top: 1px solid #E2EBF2;
-      /* Optional: restrict horizontal width and center text if desired */
-      max-width: 100%;  /* or e.g., max-width: 600px; margin: 0 auto; */
+      overflow-y: auto;
+      position: relative;
     }
 
     .faq-header {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
+    .faq-category.active {
+        background: #3B434B;
+        border-color: #3B434B;
+        color: #FFFFFF;
+        box-shadow: 0 4px 10px rgba(59, 67, 75, 0.3);
+        transform: translateY(0);
+    }
+
+    .faq-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 20px;
+    } 
+
     header {
-      position: fixed;
-      top: 10px;
-      left: 20px;
+      position: absolute;
+      top: 4px;
+      left: 15px;
     }
 
     footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      width: 100vw;
+      max-width: 100%;
       text-align: center;
       background: #3B434B;
       color: white;
       padding: 15px 0;
+      margin-top: auto;
+      position: relative;
+    }
+
+    footer p {
+      margin: 5px 0; /* Reduce text spacing */
     }
 
     footer a {
@@ -117,85 +84,189 @@
   </style>
 </head>
 <body>
-    
+
   <!-- Fixed Logo -->
   <header class="absolute top-6 left-12">
     <a href="/">
-      <img src="/assets/logo.png" alt="Rebellions Logo" class="h-6">
+      <img src="/assets/logo_white.png" alt="Rebellions Logo" class="h-7">
     </a>
   </header>
 
-  <!-- FAQ Container -->
-  <div class="faq-container">
-    <h1 class="faq-header">자주 묻는 질문</h1>
-    <div id="faq-list" class="faq-list">
-      <p class="text-center text-gray-500">FAQ를 불러오는 중...</p>
-    </div>
+<!-- FAQ Container -->
+<div class="faq-container flex flex-row justify-between w-full max-w-[1000px] mt-[120px] mb-[100px] flex-grow p-5 bg-white rounded-lg shadow-lg min-h-[650px] overflow-hidden items-start">
+  <!-- Left Column: Categories -->
+  <div class="flex flex-col w-[260px] justify-start mx-[10px] pr-4">
+    <!-- FAQ Title -->
+    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mb-[10px] text-[#3B434B]">자주 묻는 질문</h2>
+    <!-- FAQ Categories -->
+    <div class="flex flex-col gap-2 min-w-[220px] max-h-[500px] overflow-y-auto pr-2" id="faq-categories"></div>
   </div>
+  <!-- Right Column: FAQ Content -->
+  <div class="flex flex-col flex-grow pl-[25px] gap-[15px] border-l-2 border-[#808A96] overflow-y-auto min-h-[650px] self-stretch">
+    <!-- FAQ Contact -->
+    <div class="text-lg font-semibold text-[#3B434B] flex items-center whitespace-nowrap my-[10px] mb-[9px] p-[9px]">
+      <p>
+        찾으시는 질문이 없나요? 
+        <a href="mailto:contact@rebellions.ai" class="text-gray-800 hover:text-gray-600 underline">여기</a>로 연락 주세요!
+      </p>
+      <!-- Search box -->
+      <div class="border border-gray-300 rounded-full ml-6 flex justify-center items-center px-4 py-2 shadow-sm w-[250px] mt-53">
+        <input type="text" 
+              placeholder="검색어를 입력하세요" 
+              class="text-sm text-center w-full px-3 py-2 w-36 focus:outline-none" 
+            id="faqSearchInput"
+            onkeypress="handleKeyPress(event)">
+      </div>
+      <button 
+          class="ml-2 px-4 py-2 text-sm bg-[#23292F] text-[#EFF2F5] font-medium rounded-full shadow-md transition-all hover:bg-[#808A96] hover:text-[#F6F8FA]"
+          onclick="performSearch()">
+          🔍 검색
+      </button>
+      
+    </div>
+    <div id="faq-content" class="faq-content"></div>
+  </div>
+</div>
 
   <!-- Fixed Footer -->
-  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4 bg-[#3B434B]">
-    <p class="text-sm">© 2025 YourCompany. All rights reserved.</p>
-    <p class="text-sm">📧 hello@yourcompany.com</p>
+  <footer class="left-0 w-full text-center text-white p-4">
+    <p class="text-sm">
+      📍 <a href="https://maps.app.goo.gl/dEBLsvBE2L9BrmWEA" target="_blank" class="underline">
+        경기도 성남시 분당구 정자동 9번지 102동 801호
+      </a>
+    </p>
+    <p class="text-sm">
+      <a href="mailto:contact@rebellions.ai" class="underline">📧 contact@rebellions.ai</a>
+    </p>
     <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="#" class="hover:text-gray-300">About</a>
-      <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-      <a href="#" class="hover:text-gray-300">Terms of Service</a>
+      <a href="https://rebellions.ai" target="_blank" class="hover:text-gray-300">Website</a>
+      <a href="https://www.linkedin.com/company/rebellions-ai" target="_blank"
+        class="hover:text-gray-300 flex items-center space-x-1">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://x.com/RebellionsAI" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
+        <img src="/assets/X.svg" alt="X" class="h-5 w-5">
+        <span>Twitter</span>
+      </a>
     </div>
-  </footer>
+  </footer>  
 
   <script>
     async function loadFAQs() {
-      try {
-        console.log("Fetching FAQ data...");
-        const response = await fetch("/faq.json");
+    try {
+      const response = await fetch("/faq.json");
+      if (!response.ok) throw new Error("Failed to load faq.json");
 
-        if (!response.ok) {
-          throw new Error("Failed to load faq.json");
-        }
+      const categories = await response.json();
+      const categoryContainer = document.getElementById("faq-categories");
+      const faqContentContainer = document.getElementById("faq-content");
 
-        const faqs = await response.json();
-        console.log("FAQ data loaded:", faqs);
+      categoryContainer.innerHTML = ""; // Clear previous categories
+      faqContentContainer.innerHTML = `<p class="text-gray-500 text-sm">🔍 카테고리를 선택하면 FAQ가 표시됩니다.</p>`; // Default message
 
-        const faqContainer = document.getElementById("faq-list");
-        faqContainer.innerHTML = ""; // Clear loading text
-
-        if (faqs.length === 0) {
-          faqContainer.innerHTML = "<p class='text-center text-gray-500'>등록된 FAQ가 없습니다.</p>";
-          return;
-        }
-
-        // Ensure the answer container uses both "faq-answer" and "answer-body" classes.
-        faqContainer.innerHTML = faqs.map(faq => `
-          <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)">
-              <span>${faq.title}</span>
-              <button class="toggle-btn text-xl">+</button>
-            </div>
-            <div class="faq-answer answer-body">${faq.body}</div>
-          </div>
-        `).join("");
-
-        console.log("FAQs successfully inserted.");
-      } catch (error) {
-        console.error("Error loading FAQs:", error);
-        document.getElementById("faq-list").innerHTML = "<p class='text-center text-red-500'>FAQ를 불러오는 중 오류가 발생했습니다.</p>";
+      if (categories.length === 0) {
+        categoryContainer.innerHTML = "<p class='text-gray-500'>등록된 FAQ가 없습니다.</p>";
+        return;
       }
+
+      categories.forEach((category, index) => {
+        // Create category button
+        const categoryDiv = document.createElement("div");
+        // apply Tailwind classes to faq-category
+        categoryDiv.className =
+          "faq-category faq-category flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-[#808A96] bg-[#EFF2F5] text-[#3B434B] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#3B434B] hover:text-[#F6F8FA] hover:border-[#3B434B] hover:shadow-lg active:bg-[#3B434B] active:text-white active:shadow-lg"
+        categoryDiv.classList.add("faq-category");
+        categoryDiv.innerText = category.category;
+        categoryDiv.onclick = () => showFAQ(category.category, category.faqs);
+        categoryContainer.appendChild(categoryDiv);
+
+        // Load the first category by default
+        if (index === 0) {
+          categoryDiv.classList.add("active");
+          showFAQ(category.category, category.faqs);
+        }
+      });
+    } catch (error) {
+      console.error("Error loading FAQs:", error);
+      document.getElementById("faq-categories").innerHTML =
+        "<p class='text-red-500'>FAQ 데이터를 불러오는 중 오류가 발생했습니다.</p>";
+    }
+  }
+
+  function showFAQ(categoryName, faqs) {
+    const faqContentContainer = document.getElementById("faq-content");
+
+    // Clear old FAQ content
+    faqContentContainer.innerHTML = "";
+    faqContentContainer.style.display = "flex"; // Make visible
+
+    // Remove active class from all categories
+    document.querySelectorAll(".faq-category").forEach(cat => {
+      cat.classList.remove("active");
+    });
+
+    // Add active class to clicked category
+    document.querySelectorAll(".faq-category").forEach(cat => {
+      if (cat.innerText === categoryName) cat.classList.add("active");
+    });
+
+    // Populate FAQs
+    faqs.forEach(faq => {
+      const faqItem = document.createElement("div");
+      faqItem.classList.add("faq-item");
+
+      faqItem.innerHTML = `
+        <div class="faq-question text-[1rem] font-semibold p-[12px] cursor-pointer flex justify-between items-center rounded-lg mb-[12px] shadow-md border-l-[4px] border-[#808A96] transition duration-300 ease-in-out hover:bg-[#D9E4ED]" 
+            onclick="toggleFaq(this)">
+          <span>${faq.title}</span>
+          <button class="toggle-btn text-xl">+</button>
+        </div>
+        <div class="faq-answer hidden whitespace-pre-line p-[12px] text-[0.95rem] leading-relaxed border-t border-[#E2EBF2]">
+          ${faq.body}
+        </div>
+    `;
+
+      faqContentContainer.appendChild(faqItem);
+    });
+  }
+
+  function toggleFaq(questionElement) {
+    const answerElement = questionElement.nextElementSibling;
+    const toggleButton = questionElement.querySelector(".toggle-btn");
+
+    if (answerElement.style.display === "block") {
+      answerElement.style.display = "none";
+      toggleButton.innerText = "+";
+    } else {
+      answerElement.style.display = "block";
+      toggleButton.innerText = "−";
+    }
+  }
+
+// Load FAQs on page load
+window.onload = loadFAQs;
+
+function performSearch() {
+    const query = document.getElementById("faqSearchInput").value.trim();
+
+    if (query === "") {
+      alert("검색어를 입력하세요!"); // Prevent empty search
+      return;
     }
 
-    function toggleFaq(questionElement) {
-      const answerElement = questionElement.nextElementSibling;
-      const toggleButton = questionElement.querySelector(".toggle-btn");
-      if (answerElement.style.display === "block") {
-        answerElement.style.display = "none";
-        toggleButton.innerText = "+";
-      } else {
-        answerElement.style.display = "block";
-        toggleButton.innerText = "–";
-      }
-    }
+    console.log("Redirecting to /search.html with query:", query);
 
-    window.onload = loadFAQs;
+    // Redirect correctly from /faq/index.html to /search.html
+    window.location.href = `/search.html?query=${encodeURIComponent(query)}`;
+}
+
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      performSearch(); // Trigger search on Enter key
+    }
+  }
+
   </script>
 
 </body>

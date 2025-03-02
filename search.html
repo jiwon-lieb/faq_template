@@ -15,10 +15,6 @@
       left: 20px;
     }
 
-    .answer-body {
-      white-space: pre-line;
-    }
-
     body {
       font-family: 'Pretendard', sans-serif;
       background-color: #EFF2F5;
@@ -32,42 +28,82 @@
     a {
       text-decoration: underline;
     }
-    .container {
-        max-width: 700px;
-        width: 100%;
-        padding: 20px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(59, 67, 75, 0.1);
-        min-height: 500px;
-        margin-bottom: 120px; /* Add extra bottom margin to allow scrolling */
-    }
+
     .search-title {
       font-size: 1.75rem;
       font-weight: bold;
       color: #3B434B;
     }
+
     .search-result {
-      border: 1px solid #D9E4ED;
-      background: #ffffff;
-      padding: 16px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(59, 67, 75, 0.08);
-      transition: 0.3s ease-in-out;
-      margin-bottom: 1rem;
+      justify-self: center;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 10px rgba(59, 67, 75, 0.15);
+      border-left: 4px solid #808A96;
+      padding: 8px 14px;
+      min-width: 800px;
+      max-width: auto;
     }
 
+    /* FAQ Question */
     .faq-question {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      cursor: pointer;
+    }
+
+    .faq-question:hover {
+      background: #D9E4ED;
     }
 
     .faq-answer {
+      white-space: pre-line;
       display: none;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      border-top: 1px solid #E2EBF2;
+      min-width: 00px;
     }
 
+    .search-box {
+      justify-self: center;
+      display: flex;
+      min-width: 300px;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .search-input {
+      justify-self: center;
+      flex: 1;
+      max-width: 300px;
+      padding: 10px;
+      border: 2px solid #808A96;
+      border-radius: 25px;
+      font-size: 14px;
+      text-align: center;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .search-input:focus {
+      border-color: #3B434B;
+      box-shadow: 0 0 8px rgba(59, 67, 75, 0.3);
+    }
+
+    .search-button:hover {
+      background: #808A96;
+    }
+
+    /* Fixed Footer */
     footer {
       position: fixed;
       bottom: 0;
@@ -90,32 +126,55 @@
   </style>
 </head>
 <body>
+
   <!-- Fixed Logo -->
   <header class="absolute top-6 left-12">
-    <a href="/faq/index.html">
-      <img src="/assets/logo.png" alt="Rebellions Logo" class="h-6">
+    <a href="/">
+      <img src="/assets/logo.png" alt="Logo" class="h-6">
     </a>
   </header>
 
   <!-- Search Container -->
-  <div class="container text-center mt-20">
-    <h1 class="search-title mb-6">🔍 검색 결과</h1>
-    <div id="results" class="space-y-4"></div>
+  <div class="container w-full max-w-3xl min-w-[1000px] mx-auto text-center mt-[120px] p-6 bg-white shadow-lg rounded-xl min-h-[auto] mb-32 flex flex-col justify-start">
+    <h1 class="search-title mb-6 ">🔍 검색 결과</h1>
+    <div id="results" class="max-w-md w-full mx-auto bg-white rounded-md p-4 border-gray-400"></div>
+    <!-- Search Again Bar -->
+    <div class="search-box flex justify-center items-center space-x-2 min-w-[300px] gap-2 mt-5">
+      <input type="text" 
+             placeholder="검색어를 입력하세요" 
+             class="px-4 py-3 border border-gray-400 rounded-full shadow-sm focus:ring focus:ring-gray-300" 
+             id="searchAgainInput"
+      >
+      <!-- Search Button -->
+      <button class="bg-gray-700 px-6 py-3 rounded-full shadow-md text-white font-semibold text-lg transition-all" onclick="performSearch()">검색</button>
+    </div>
   </div>
 
   <!-- Fixed Footer -->
-  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4 bg-[#3B434B]">
-    <p class="text-sm">© 2025 YourCompany. All rights reserved.</p>
-    <p class="text-sm">📧 hello@yourcompany.com</p>
+  <footer class="left-0 w-full text-center text-white p-4">
+    <p class="text-sm">
+      📍 <a href="https://maps.app.goo.gl/dEBLsvBE2L9BrmWEA" target="_blank" class="underline">
+        경기도 성남시 분당구 정자동 9번지 102동 801호
+      </a>
+    </p>
+    <p class="text-sm">
+      <a href="mailto:contact@rebellions.ai" class="underline">📧 contact@rebellions.ai</a>
+    </p>
     <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="#" class="hover:text-gray-300">About</a>
-      <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-      <a href="#" class="hover:text-gray-300">Terms of Service</a>
+      <a href="https://rebellions.ai" target="_blank" class="hover:text-gray-300">Website</a>
+      <a href="https://www.linkedin.com/company/rebellions-ai" target="_blank"
+        class="hover:text-gray-300 flex items-center space-x-1">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://x.com/RebellionsAI" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
+        <img src="/assets/X.svg" alt="X" class="h-5 w-5">
+        <span>Twitter</span>
+      </a>
     </div>
   </footer>
 
   <script>
-    // Toggle the collapsible answer when a question is clicked
     function toggleFaq(element) {
       const answerDiv = element.nextElementSibling;
       const toggleButton = element.querySelector('.toggle-btn');
@@ -130,38 +189,53 @@
 
     async function searchFAQs() {
       const urlParams = new URLSearchParams(window.location.search);
-      const query = urlParams.get("query")?.toLowerCase() || "";
-      const response = await fetch("/faq.json");
-      const faqs = await response.json();
+      const query = urlParams.get("query")?.trim().toLowerCase() || "";
       const resultsContainer = document.getElementById("results");
+      const searchTitle = document.querySelector(".search-title");
 
-      // Filter FAQs by title or body containing the search query
-      const filtered = faqs.filter(faq =>
-        faq.title.toLowerCase().includes(query) ||
-        faq.body.toLowerCase().includes(query)
-      );
+      if (query) {
+        searchTitle.innerHTML = `🔍 "<span class="text-red-500">${query}</span>" 검색 결과`;
+      }
 
-      // If no results found, display a message
-      if (filtered.length === 0) {
-        resultsContainer.innerHTML = "<p class='no-results'>❌ 검색 결과가 없습니다.</p>";
+      if (!query) {
+        resultsContainer.innerHTML = `<p class='no-results'>⚠️ 검색 내용을 입력해주세요.</p>`;
         return;
       }
 
-      // Generate collapsible titles for each matching FAQ
-      resultsContainer.innerHTML = filtered.map(faq => `
-        <div class="search-result">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <span class="text-lg text-center">${faq.title}</span>
-            <button class="toggle-btn text-xl">+</button>
-          </div>
-          <div class="faq-answer answer-body text-left" -mt-10>
-            ${faq.body}
-          </div>
-        </div>
-      `).join("");
+      try {
+        const response = await fetch("/faq.json");
+        if (!response.ok) throw new Error("Failed to load FAQ data");
+
+        const faqData = await response.json();
+        let filteredResults = faqData.flatMap(category => 
+          category.faqs.filter(faq => faq.title.toLowerCase().includes(query) || faq.body.toLowerCase().includes(query))
+        );
+
+        resultsContainer.innerHTML = filteredResults.length === 0 
+          ? `<p class='no-results'>❌ "<span class="text-red-500">${query}</span>" 검색 결과가 없습니다.</p>` 
+          : filteredResults.map(faq => `
+              <div class="search-result">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <span class="text-lg">${faq.title}</span>
+                  <button class="toggle-btn text-xl">+</button>
+                </div>
+                <div class="faq-answer text-left">${faq.body}</div>
+              </div>
+            `).join("");
+      } catch (error) {
+        resultsContainer.innerHTML = `<p class='no-results text-red-500'>❌ FAQ 데이터를 불러오는 중 오류가 발생했습니다.</p>`;
+      }
+    }
+
+    function performSearch() {
+      const query = document.getElementById("searchAgainInput").value.trim();
+      if (query) {
+        window.location.href = `search.html?query=${query}`;
+      }
     }
 
     searchFAQs();
   </script>
+
 </body>
 </html>

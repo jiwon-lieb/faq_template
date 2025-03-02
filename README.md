@@ -9,37 +9,60 @@ Eleventy를 사용한 고객지원 FAQ 웹사이트 입니다. 아래의 가이�
 1. GitHub에서 레포지토리를 클론합니다.
     
     ```bash
-    git clone https://github.com/your-username/cs-faq.git
+    git clone https://github.com/your-username/faq_page.git
     ```
     
 2. 클론한 폴더로 이동합니다.
     
     ```bash
-    cd cs-faq
+    cd faq_page
     ```
     
-## 2. 의존성 설치
-
-1. **Node.js 설치**
-
-    [Download NodeJS](https://nodejs.org/en/download)
-
 2. **Yarn 설치**
+
+    macOS에서는 Homebrew를 사용해서 설치할 수 있습니다.
+   
+    ```bash
+    brew install yarn
+    ```
+    Node.js를 설치하셨다면 npm을 사용해도 됩니다.
+
+    ```bash
+    npm install -g yarn
+    ```
     
+4. **의존성**
+       
     프로젝트 루트에서 아래 명령어를 실행하여 의존성을 설치합니다.
     
     ```bash
     yarn install
     ```
     
-## 3. 로컬 서버 실행
+## 3. Eleventy 설치 및 로컬 서버 실행
+
+1. **Eleventy 설치**
     
-1. **Eleventy 실행**
-    
-    Eleventy는 로컬 서버에서 정적 사이트를 미리보기할 수 있도록 도와줍니다. 아래 명령어로 Eleventy를 실행하세요.
+    프로젝트 루트에서 아래 명령어를 실행하여 Eleventy를 설치합니다.
     
     ```bash
-    yarn 얍!
+    yarn add @11ty/eleventy
+    ```
+    
+2. **gray-matter 설치**
+    
+    Markdown 파일을 JSON으로 변환하는 `generate_faq.js`를 실행하려면 `gray-matter`가 필요합니다.
+    
+    ```bash
+    yarn add gray-matter
+    ```
+    
+3. **Eleventy 실행**
+    
+   아래 명령어를 사용하면 로컬 서버에서 정적 사이트를 미리 볼 수 있습니다.
+    
+    ```bash
+    yarn exec eleventy -- --serve
     ```
     
     - 기본적으로 빌드된 결과는 `_site` 폴더에 생성됩니다.

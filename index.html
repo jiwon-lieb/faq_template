@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,14 @@
 
     body {
       font-family: 'Pretendard', sans-serif;
-      background: url('/assets/background.jpg') no-repeat center center fixed;
+      background: url('/assets/background.jpeg') no-repeat center center fixed;
       background-size: cover;
-      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
       overflow: hidden;
-      position: relative; /* ensures absolute/fixed children are relative to body */
+      overflow-y: auto;
+      position: relative;
+      /* ensures absolute/fixed children are relative to body */
     }
 
     .btn {
@@ -29,17 +29,17 @@
       font-size: 1.1rem;
       font-weight: 600;
       border-radius: 50px;
-      box-shadow: 0 4px 10px rgba(59, 67, 75, 0.15);
+      box-shadow: 0 5px 10px rgba(59, 67, 75, 0.15);
       transition: all 0.3s ease-in-out;
     }
 
     .btn-primary {
       background: #3B434B;
-      color: white;
+      color: #F6F8FA;
     }
 
     .btn-primary:hover {
-      background: #808A96;
+      background: #3B434B;
       transform: translateY(-2px);
     }
 
@@ -71,13 +71,15 @@
     }
 
     footer {
-      position: fixed;
+      position: relative;
       bottom: 0;
       width: 100%;
       text-align: center;
       background: #3B434B;
       color: white;
       padding: 15px 0;
+      bottom: 0;
+      margin-top: 100px;
     }
 
     footer a {
@@ -91,29 +93,91 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navbars -->
   <header class="absolute top-6 left-12">
-    <img src="/assets/logo.png" alt="Logo" class="h-6">
+    <a href="/">
+      <img src="/assets/logo_white.png" alt="White Logo" class="h-7">
+    </a>
   </header>
 
-  <!-- Main Card (Balanced within screen height) -->
-  <div class="flex flex-col items-center justify-center text-center p-10 bg-white shadow-xl rounded-2xl border border-[#E2EBF2] max-w-xl w-full relative -mt-40">
-    
-    <!-- Secondary Logo Above Title -->
-    <img src="/assets/logo.png" alt="Black Logo" class="h-6 mb-4"> 
+  <div
+    class="main-container flex flex-col items-center justify-center text-center p-10 bg-white shadow-xl rounded-2xl border border-[#E2EBF2] max-w-xl w-full relative mt-[120px] mb-[120px]">
 
-    <!-- Title -->
+    <!-- Secondary Logo Above Title -->
+    <img src="/assets/logo.png" alt="Black Logo" class="h-6 mb-4">
+
     <h1 class="text-4xl font-extrabold text-[#3B434B] mb-6 mt-4">
       무엇을 도와드릴까요?
     </h1>
 
     <!-- Search Bar -->
-    <form onsubmit="return performSearch()" class="w-full max-w-lg text-center">
-        <input type="text" id="searchQuery" placeholder="검색어를 입력하세요..." class="search-bar mb-3">
-        <button type="submit" class="btn btn-primary mb-6 mx-auto">🔍 검색</button>
-    </form>    
+    <form x-data="{ 
+      searchQuery: '',
+      searchResults: '',
+      async performSearch() {
+        const query = this.searchQuery.trim().toLowerCase();
+        this.searchResults = ''; // Reset previous messages
+        if (!query) {
+          this.searchResults = '⚠️ 검색어를 입력해주세요.';
+          return;
+        }
+
+        try {
+          const response = await fetch('/faq.json');
+          const faqData = await response.json();
+          let matches = [];
+
+          // Iterate through categories and extract matching FAQs
+          faqData.forEach(category => {
+            category.faqs.forEach(faq => {
+              if (
+                faq.title.toLowerCase().includes(query) || 
+                faq.body.toLowerCase().includes(query)
+              ) {
+                matches.push({ category: category.category, title: faq.title, body: faq.body });
+              }
+            });
+          });
+
+          if (matches.length === 0) {
+            this.searchResults = `❌ <span class='text-s text-red-500'>&quot;${this.searchQuery}&quot; 검색 결과를 찾을 수 없습니다. </span>`;
+          } else {
+            window.location.href = `search.html?query=${encodeURIComponent(query)}`;
+          }
+
+        } catch (error) {
+          console.error('Error fetching FAQs:', error);
+          this.searchResults = `❌ FAQ 데이터를 불러오는 중 오류가 발생했습니다.`;
+        }
+      }
+
+    }" x-on:submit.prevent="await performSearch" class="w-full max-w-lg text-center">
+
+    <!-- Search Input -->
+    <input autocomplete="off" x-model="searchQuery" type="text" id="searchQuery" placeholder="검색어를 입력하세요"
+      class="search-bar mb-3">
+
+    <!-- Search Button -->
+    <button 
+      @click="performSearch" 
+      type="submit" 
+      x-bind:disabled="searchQuery.length === 0" 
+      x-bind:class="searchQuery.length > 0 
+        ? 'bg-[#23292F] text-[#EFF2F5] hover:bg-[#808A96] hover:text-[#F6F8FA] transition-all' 
+        : 'bg-[#EFF2F5] text-[#BBC4CF] cursor-not-allowed'"
+      class="btn mb-3 mx-auto px-6 py-3 rounded-full shadow-md font-semibold text-lg transition-all">
+      🔍 검색
+  </button>
+
+    <!-- Search Results Message (Appears Below Button Without Reloading) -->
+    <p class="mt-4 mb-3" x-html="searchResults"></p>
+
+</form>
+
+
 
     <!-- Subtitle -->
     <p class="text-lg text-[#808A96] mb-6">
@@ -125,7 +189,7 @@
       <a href="/faq" class="btn btn-primary">
         📖 FAQ 보기
       </a>
-      <a href="support.html" class="btn btn-secondary">
+      <a href="mailto:contact@rebellions.ai" class="btn btn-secondary">
         📨 고객 지원 요청
       </a>
     </div>
@@ -133,24 +197,29 @@
   </div>
 
   <!-- Footer (Fixed at bottom, flush with bottom edge) -->
-  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4 bg-[#3B434B]">
-    <p class="text-sm">© 2025 YourCompany. All rights reserved.</p>
-    <p class="text-sm">📧 hello@yourcompany.com</p>
+  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4">
+    <p class="text-sm">
+      📍 <a href="https://maps.app.goo.gl/dEBLsvBE2L9BrmWEA" target="_blank" class="underline">
+        경기도 성남시 분당구 정자동 9번지 102동 801호
+      </a>
+    </p>
+    <p class="text-sm">
+      <a href="mailto:contact@rebellions.ai" class="underline">📧 contact@rebellions.ai</a>
+    </p>
     <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="#" class="hover:text-gray-300">About</a>
-      <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-      <a href="#" class="hover:text-gray-300">Terms of Service</a>
+      <a href="https://rebellions.ai" target="_blank" class="hover:text-gray-300">Website</a>
+      <a href="https://www.linkedin.com/company/rebellions-ai" target="_blank"
+        class="hover:text-gray-300 flex items-center space-x-1">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://x.com/RebellionsAI" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
+        <img src="/assets/X.svg" alt="X" class="h-5 w-5">
+        <span>Twitter</span>
+      </a>
     </div>
   </footer>
-
-  <script>
-    function performSearch() {
-        const query = document.getElementById("searchQuery").value.trim();
-        if (query) {
-            window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-        }
-        return false; // Prevent form submission
-    }
-  </script>
+  <script src="//unpkg.com/alpinejs" defer></script>
 </body>
+
 </html>

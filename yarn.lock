@@ -60,7 +60,7 @@
 
 "@11ty/eleventy@^3.0.0":
   version "3.0.0"
-  resolved "https://registry.npmjs.org/@11ty/eleventy/-/eleventy-3.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-3.0.0.tgz#a2eabcb0b55f3987d7687f4446e7294e6195476e"
   integrity sha512-0P0ZsJXVW2QiNdhd7z+GYy6n+ivh0enx1DRdua5ta6NlzY2AhbkeWBY6U+FKA8lPS3H4+XsTpfLLfIScpPZLaQ==
   dependencies:
     "@11ty/dependency-tree" "^3.0.1"
@@ -871,7 +871,7 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.11, graceful-fs@^4.2.4:
 
 gray-matter@^4.0.3:
   version "4.0.3"
-  resolved "https://registry.npmjs.org/gray-matter/-/gray-matter-4.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/gray-matter/-/gray-matter-4.0.3.tgz#e893c064825de73ea1f5f7d88c7a9f7274288798"
   integrity sha512-5v6yZd4JK3eMI3FqqCouswVqwugaA9r4dNZB1wwcmrD02QkV5H0y7XBQW8QwQqEaZY1pM9aqORSORhJRdNK44Q==
   dependencies:
     js-yaml "^3.13.1"
