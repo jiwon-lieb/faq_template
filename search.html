@@ -16,51 +16,27 @@
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #EFF2F5;
+      font-family: 'Montserrat', 'sans-serif';
+      background: url('/assets/background.jpeg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      justify-content: center;
+      overflow: hidden;
+      overflow-y: auto;
+      position: relative;
+      /* ensures absolute/fixed children are relative to body */
     }
 
     a {
       text-decoration: underline;
     }
 
-    .search-title {
-      font-size: 1.75rem;
-      font-weight: bold;
-      color: #3B434B;
-    }
-
-    .search-result {
-      justify-self: center;
-      background: white;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      box-shadow: 0 2px 10px rgba(59, 67, 75, 0.15);
-      border-left: 4px solid #808A96;
-      padding: 8px 14px;
-      min-width: 800px;
-      max-width: auto;
-    }
-
     /* FAQ Question */
     .faq-question {
       font-size: 1.1rem;
       font-weight: 600;
-      padding: 12px;
       cursor: pointer;
       transition: background 0.3s ease-in-out;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .faq-question:hover {
-      background: #D9E4ED;
     }
 
     .faq-answer {
@@ -73,58 +49,30 @@
       min-width: 00px;
     }
 
-    .search-box {
-      justify-self: center;
-      display: flex;
-      min-width: 300px;
-      gap: 8px;
-      margin-top: 20px;
+    .prose h2 {
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
-    .search-input {
-      justify-self: center;
-      flex: 1;
-      max-width: 300px;
-      padding: 10px;
-      border: 2px solid #808A96;
-      border-radius: 25px;
-      font-size: 14px;
-      text-align: center;
-      outline: none;
-      transition: 0.3s;
+    .prose h1 {
+      margin-bottom: 0px;
     }
 
-    .search-input:focus {
-      border-color: #3B434B;
-      box-shadow: 0 0 8px rgba(59, 67, 75, 0.3);
+    .prose p {
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
-    .search-button:hover {
-      background: #808A96;
+    .prose ul {
+      margin-top: -25px;
+      margin-bottom: -25px;
     }
 
-    /* Fixed Footer */
-    footer {
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background: #1C1C1E;
-      color: white;
-      padding: 15px 0;
-      bottom: 0;
-      margin-top: 100px;
+    .prose li {
+      margin-top: -10px;
+      margin-bottom: -10px;
     }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
-      transition: 0.3s ease-in-out;
-    }
-
-    footer a:hover {
-      color: #8C8C8C;
-    }
+  
   </style>
 </head>
 <body>
@@ -132,58 +80,85 @@
   <!-- Fixed Logo -->
   <header class="absolute top-6 left-12">
     <a href="/">
-      <img src="/assets/logo.png" alt="Logo" class="h-6">
+      <img src="/assets/logo_white.png" alt="Logo" class="h-6">
     </a>
   </header>
 
   <!-- Search Container -->
-  <div class="container w-full max-w-3xl min-w-[1000px] mx-auto text-center mt-[120px] p-6 bg-white shadow-lg rounded-xl min-h-[auto] mb-32 flex flex-col justify-start">
-    <h1 class="search-title mb-6 ">🔍 검색 결과</h1>
-    <div id="results" class="max-w-md w-full mx-auto bg-white rounded-md p-4 border-gray-400"></div>
+  <div class="container w-full max-w-3xl min-w-[1000px] mx-auto text-center mt-[120px] p-6 bg-white shadow-2xl backdrop-blur-lg rounded-2xl border border-[#C19A92] min-h-auto mb-32 flex flex-col justify-start">
+    <h1 class="search-title text-2xl font-semibold text-[#3B2F2F] mb-4">🔍 Search Results</h1>
+      <div id="results" class="w-full min-w-[500px] max-w-lg mx-auto text-[#3B2F2F] rounded-lg flex flex-col items-center space-y-3">
+        <p class="text-center text-sm opacity-70">No results found. Try searching again!</p>
+      </div>
+
     <!-- Search Again Bar -->
-    <div class="search-box flex justify-center items-center space-x-2 min-w-[300px] gap-2 mt-5">
-      <input type="text" 
-             placeholder="검색어를 입력하세요" 
-             class="px-4 py-3 border border-gray-400 rounded-full shadow-sm focus:ring focus:ring-gray-300" 
-             id="searchAgainInput"
-      >
-      <!-- Search Button -->
-      <button class="bg-gray-700 px-6 py-3 rounded-full shadow-md text-white font-semibold text-lg transition-all" onclick="performSearch()">검색</button>
+    <div class="flex flex-row items-center justify-center gap-2 w-[350px] mx-auto mt-5">
+        <input type="text" 
+               placeholder="What are you looking for?" 
+               class="w-full px-4 py-3 border border-[#C19A92] bg-[#FFF5F0] text-[#3B2F2F] rounded-full focus:outline-none focus:ring focus:ring-[#C19A92]" 
+               id="searchAgainInput"
+        >
+        <!-- Search Button -->
+        <button 
+              class="px-5 py-3 text-sm bg-[#C19A92] text-[#FFF5F0] rounded-full shadow-md transition-all hover:bg-[#D8BFB2] hover:text-[#3B2F2F] hover:shadow-lg hover:-translate-y-0.5"
+              onclick="performSearch()">
+              🔍 Search
+        </button>
     </div>
-  </div>
+</div>
 
   <!-- Fixed Footer -->
-  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4">
-    <p class="text-sm">
-      <a>Made with ♥ by Baddie Jiwon</a>
+  <footer class="fixed bottom-0 left-0 w-full text-center bg-[#2B1E1E] text-[#FFF5F0] py-6 mt-24 shadow-xl border-t border-[#C19A92]">
+    <p class="text-sm font-semibold tracking-wide transition-all hover:tracking-widest">
+      Made with <span class="text-[#E6AFA3]">♥</span> by Baddie Jiwon
     </p>
-    <p class="text-sm">
-      <a href="mailto:contact@rebellions.ai" class="underline">contact@jiwonkwak.co</a>
-    </p>
-    <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="https://jiwonkwak.co" target="_blank" class="hover:text-gray-300">Website</a>
-      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
-        class="hover:text-gray-300 flex items-center space-x-1">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
-        <span>LinkedIn</span>
+    
+    <p class="text-sm mt-1">
+      <a href="mailto:contact@jiwonkwak.co" 
+         class="underline decoration-[#C19A92] decoration-2 hover:text-[#E6AFA3] hover:decoration-[#E6AFA3] transition-all duration-300">
+         ✉️ contact@jiwonkwak.co
       </a>
-      <a href="#" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
-        <img src="/assets/X.svg" alt="X" class="h-5 w-5">
-        <span>Twitter</span>
+    </p>
+
+    <div class="mt-4 flex justify-center space-x-8 items-center">
+      <!-- Website -->
+      <a href="https://jiwonkwak.co" target="_blank" 
+         class="text-[#FFF5F0] hover:text-[#E6AFA3] hover:underline underline-offset-4 transition-all duration-300">
+        🌐 Website
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
+         class="flex items-center space-x-2 text-[#FFF5F0] hover:text-[#E6AFA3] transition-all duration-300">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" 
+             alt="LinkedIn" 
+             class="h-5 w-5 opacity-80 hover:drop-shadow-glow transition-all duration-300">
+        <span class="hover:underline underline-offset-4">LinkedIn</span>
+      </a>
+
+      <!-- Twitter -->
+      <a href="#" target="_blank" 
+         class="flex items-center space-x-2 text-[#FFF5F0] hover:text-[#E6AFA3] transition-all duration-300">
+        <img src="/assets/X.svg" 
+             alt="X" 
+             class="h-5 w-5 opacity-80 hover:drop-shadow-glow transition-all duration-300">
+        <span class="hover:underline underline-offset-4">Twitter</span>
       </a>
     </div>
-  </footer>
+</footer>
 
   <script>
     function toggleFaq(element) {
-      const answerDiv = element.nextElementSibling;
-      const toggleButton = element.querySelector('.toggle-btn');
-      if (answerDiv.style.display === "block") {
+    const answerDiv = element.nextElementSibling; // Get the next sibling element (answer)
+    const toggleButton = element.querySelector('.toggle-btn');
+
+    // Toggle visibility of the answer
+    if (answerDiv.style.display === "block") {
         answerDiv.style.display = "none";
-        toggleButton.innerText = "+";
-      } else {
+        toggleButton.innerText = "+";  // Change back to "+"
+    } else {
         answerDiv.style.display = "block";
-        toggleButton.innerText = "−";
+        toggleButton.innerText = "−";  // Change "+" to "-"
       }
     }
 
@@ -194,11 +169,11 @@
       const searchTitle = document.querySelector(".search-title");
 
       if (query) {
-        searchTitle.innerHTML = `🔍 "<span class="text-red-500">${query}</span>" 검색 결과`;
+        searchTitle.innerHTML = `🔍 Results for "<span class="text-red-500">${query}</span>"`;
       }
 
       if (!query) {
-        resultsContainer.innerHTML = `<p class='no-results'>⚠️ 검색 내용을 입력해주세요.</p>`;
+        resultsContainer.innerHTML = `<p class='no-results'>⚠️ Enter a search word.</p>`;
         return;
       }
 
@@ -212,18 +187,27 @@
         );
 
         resultsContainer.innerHTML = filteredResults.length === 0 
-          ? `<p class='no-results'>❌ "<span class="text-red-500">${query}</span>" 검색 결과가 없습니다.</p>` 
-          : filteredResults.map(faq => `
-              <div class="search-result">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                  <span class="text-lg">${faq.title}</span>
-                  <button class="toggle-btn text-xl">+</button>
-                </div>
-                <div class="faq-answer text-left prose">${faq.body}</div>
-              </div>
-            `).join("");
+    ? `<p class='no-results text-center text-[#C19A92] font-semibold py-4'>❌ "<span class="text-red-500">${query}</span>" No results found.</p>` 
+    : filteredResults.map(faq => `
+        <div class="w-full max-w-3xl min-w-[600px] mx-auto bg-[#FFF5F0] text-[#3B2F2F] 
+                    rounded-lg shadow-md p-4 border border-[#C19A92] min-h-[60px] flex flex-col space-y-2 
+                    transition-all cursor-pointer hover:bg-[#F4CBC2] hover:text-[#3B2F2F] hover:border-[#C19A92] hover:shadow-lg">
+                    
+          <!-- FAQ Title & Toggle Button -->
+          <div class="flex justify-between items-center faq-question px-4 py-2" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold">${faq.title}</span>
+              <button class="toggle-btn text-xl text-[#C19A92] font-bold transition-transform duration-300">+</button>
+          </div>
+
+          <!-- FAQ Answer (Initially Hidden & Left-Aligned) -->
+          <article class="faq-answer hidden whitespace-pre-line px-6 py-3 text-[1rem] leading-relaxed 
+                          border-t border-[#C19A92] bg-[#FFEDE6] text-[#3B2F2F] text-left rounded-b-lg shadow-inner prose">
+            ${faq.body}
+          </article>
+        </div>
+    `).join("");
       } catch (error) {
-        resultsContainer.innerHTML = `<p class='no-results text-red-500'>❌ FAQ 데이터를 불러오는 중 오류가 발생했습니다.</p>`;
+        resultsContainer.innerHTML = `<p class='no-results text-red-500'>❌ An error occurred while loading data.</p>`;
       }
     }
 
