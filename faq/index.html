@@ -34,11 +34,12 @@
     }
 
     .faq-category.active {
-        background: #3B434B;
-        border-color: #3B434B;
-        color: #FFFFFF;
-        box-shadow: 0 4px 10px rgba(59, 67, 75, 0.3);
-        transform: translateY(0);
+    background: #E6AFA3;
+    color: #FFF5F0;
+    box-shadow: 2px 5px 15px rgba(230, 175, 163, 0.4);
+    border: 2px solid #F4CBC2; 
+    border-radius: 50px; 
+    transition: all 0.3s ease-in-out;
     }
 
     .faq-content {
@@ -57,30 +58,6 @@
       left: 15px;
     }
 
-    footer {
-      width: 100vw;
-      max-width: 100%;
-      text-align: center;
-      background: #3B434B;
-      color: white;
-      padding: 15px 0;
-      margin-top: auto;
-      position: relative;
-    }
-
-    footer p {
-      margin: 5px 0; /* Reduce text spacing */
-    }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
-      transition: 0.3s ease-in-out;
-    }
-
-    footer a:hover {
-      color: #D9E4ED;
-    }
   </style>
 </head>
 <body>
@@ -93,32 +70,32 @@
   </header>
 
 <!-- FAQ Container -->
-<div class="faq-container flex flex-row justify-between w-full max-w-[1000px] mt-[120px] mb-[100px] flex-grow p-5 bg-white rounded-lg shadow-lg min-h-[650px] overflow-hidden items-start">
+<div class="faq-container flex flex-row justify-between w-full max-w-[1000px] mt-[120px] mb-[100px] flex-grow p-7 bg-white/80 shadow-2xl backdrop-blur-lg rounded-2xl border border-[#C19A92] min-h-[650px] overflow-hidden items-start">
   <!-- Left Column: Categories -->
   <div class="flex flex-col w-[260px] justify-start mx-[10px] pr-4">
-    <!-- FAQ Title -->
-    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mb-[10px] text-[#3B434B]">By Topics</h2>
-    <!-- FAQ Categories -->
-    <div class="flex flex-col gap-2 min-w-[220px] max-h-[500px] overflow-y-auto pr-2" id="faq-categories"></div>
+    <!-- Title -->
+    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mb-[10px] text-[#3B2F2F]">Categories</h2>
+    <!-- Categories -->
+    <div class="flex flex-col gap-2 min-w-[220px] max-h-[500px] overflow-y-auto pr-2 rounded-2xl" id="faq-categories"></div>
   </div>
   <!-- Right Column: FAQ Content -->
-  <div class="flex flex-col flex-grow pl-[25px] gap-[15px] border-l-2 border-[#808A96] overflow-y-auto min-h-[650px] self-stretch">
+  <div class="flex flex-col flex-grow pl-[25px] gap-[15px] border-l-2 border-[#C19A92] overflow-y-auto min-h-[650px] self-stretch">
     <!-- FAQ Contact -->
-    <div class="text-lg font-semibold text-[#3B434B] flex items-center whitespace-nowrap my-[10px] mb-[9px] p-[9px]">
+    <div class="text-lg font-semibold text-[#3B434B] flex items-center whitespace-nowrap -ml-3 my-[10px] mb-[9px] p-[9px]">
       <p>
         Want to know me more? Contact me
-        <a href="mailto:contact@jiwonkwak.co" class="text-gray-800 hover:text-gray-600 underline">here</a>
+        <a href="mailto:contact@jiwonkwak.co" class="text-[#C19A92] hover:text-[#A67F74] underline">here</a>
       </p>
       <!-- Search box -->
-      <div class="border border-gray-300 rounded-full ml-6 flex justify-center items-center px-4 py-2 shadow-sm w-[250px] mt-53">
+      <div class="border border-[#D8BFB2] border-gray-300 rounded-full bg-[#FFF5F0] ml-2 flex justify-center items-center px-4 py-2 shadow-sm w-[270px] mt-50">
         <input type="text" 
               placeholder="Enter a search word" 
-              class="text-sm text-center w-full px-3 py-2 w-36 focus:outline-none" 
+              class="text-sm text-center w-full px-3 py-2 bg-[#FFF5F0] w-36 text-[#3B2F2F] rounded-full focus:ring-4 focus:ring-[#F4CBC2] transition-all" 
             id="faqSearchInput"
             onkeypress="handleKeyPress(event)">
       </div>
       <button 
-          class="ml-2 px-4 py-2 text-sm bg-[#23292F] text-[#EFF2F5] font-medium rounded-full shadow-md transition-all hover:bg-[#808A96] hover:text-[#F6F8FA]"
+          class="ml-2 -mr-2 px-4 py-2 text-sm bg-[#C19A92] text-[#FFF5F0] font-medium rounded-full shadow-md transition-all hover:bg-[#D8BFB2] hover:text-[#3B2F2F] hover:shadow-lg hover:-translate-y-0.5"
           onclick="performSearch()">
           🔍 Search
       </button>
@@ -129,26 +106,44 @@
 </div>
 
   <!-- Fixed Footer -->
-  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4">
-    <p class="text-sm">
-      <a>Made with ♥ by Baddie Jiwon</a>
+  <footer class="fixed bottom-0 left-0 w-full text-center bg-[#2B1E1E] text-[#FFF5F0] py-6 mt-24 shadow-xl border-t border-[#C19A92]">
+    <p class="text-sm font-semibold tracking-wide transition-all hover:tracking-widest">
+      Made with <span class="text-[#E6AFA3]">♥</span> by Baddie Jiwon
     </p>
-    <p class="text-sm">
-      <a href="mailto:contact@rebellions.ai" class="underline">contact@jiwonkwak.co</a>
-    </p>
-    <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="https://jiwonkwak.co" target="_blank" class="hover:text-gray-300">Website</a>
-      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
-        class="hover:text-gray-300 flex items-center space-x-1">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
-        <span>LinkedIn</span>
+    
+    <p class="text-sm mt-1">
+      <a href="mailto:contact@jiwonkwak.co" 
+         class="underline decoration-[#C19A92] decoration-2 hover:text-[#E6AFA3] hover:decoration-[#E6AFA3] transition-all duration-300">
+         ✉️ contact@jiwonkwak.co
       </a>
-      <a href="#" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
-        <img src="/assets/X.svg" alt="X" class="h-5 w-5">
-        <span>Twitter</span>
+    </p>
+
+    <div class="mt-4 flex justify-center space-x-8 items-center">
+      <!-- Website -->
+      <a href="https://jiwonkwak.co" target="_blank" 
+         class="text-[#FFF5F0] hover:text-[#E6AFA3] hover:underline underline-offset-4 transition-all duration-300">
+        🌐 Website
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
+         class="flex items-center space-x-2 text-[#FFF5F0] hover:text-[#E6AFA3] transition-all duration-300">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" 
+             alt="LinkedIn" 
+             class="h-5 w-5 opacity-80 hover:drop-shadow-glow transition-all duration-300">
+        <span class="hover:underline underline-offset-4">LinkedIn</span>
+      </a>
+
+      <!-- Twitter -->
+      <a href="#" target="_blank" 
+         class="flex items-center space-x-2 text-[#FFF5F0] hover:text-[#E6AFA3] transition-all duration-300">
+        <img src="/assets/X.svg" 
+             alt="X" 
+             class="h-5 w-5 opacity-80 hover:drop-shadow-glow transition-all duration-300">
+        <span class="hover:underline underline-offset-4">Twitter</span>
       </a>
     </div>
-  </footer>  
+</footer> 
 
   <script>
     async function loadFAQs() {
@@ -160,11 +155,8 @@
       const categoryContainer = document.getElementById("faq-categories");
       const faqContentContainer = document.getElementById("faq-content");
 
-      categoryContainer.innerHTML = ""; // Clear previous categories
-      faqContentContainer.innerHTML = `<p class="text-gray-500 text-sm">🔍 카테고리를 선택하면 FAQ가 표시됩니다.</p>`; // Default message
-
       if (categories.length === 0) {
-        categoryContainer.innerHTML = "<p class='text-gray-500'>등록된 FAQ가 없습니다.</p>";
+        categoryContainer.innerHTML = "<p class='text-gray-500'>No content found.</p>";
         return;
       }
 
@@ -173,7 +165,7 @@
         const categoryDiv = document.createElement("div");
         // apply Tailwind classes to faq-category
         categoryDiv.className =
-          "faq-category faq-category flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-[#808A96] bg-[#EFF2F5] text-[#3B434B] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#3B434B] hover:text-[#F6F8FA] hover:border-[#3B434B] hover:shadow-lg active:bg-[#3B434B] active:text-white active:shadow-lg"
+          "faq-category flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-[#C19A92] bg-[#FFF5F0] text-[#3B2F2F] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#E6AFA3] hover:text-[#FFF5F0] hover:border-[#A67F74] hover:shadow-lg focus:ring-2 focus:ring-[#E6AFA3] focus:bg-[#C19A92] focus:text-[#FFF5F0]"
         categoryDiv.classList.add("faq-category");
         categoryDiv.innerText = category.category;
         categoryDiv.onclick = () => showFAQ(category.category, category.faqs);
@@ -188,7 +180,7 @@
     } catch (error) {
       console.error("Error loading FAQs:", error);
       document.getElementById("faq-categories").innerHTML =
-        "<p class='text-red-500'>FAQ 데이터를 불러오는 중 오류가 발생했습니다.</p>";
+        "<p class='text-red-500'>An error occurred while retrieving data</p>";
     }
   }
 
@@ -215,15 +207,21 @@
       faqItem.classList.add("faq-item");
 
       faqItem.innerHTML = `
-        <div class="faq-question text-[1rem] font-semibold p-[12px] cursor-pointer flex justify-between items-center rounded-lg mb-[12px] shadow-md border-l-[4px] border-[#808A96] transition duration-300 ease-in-out hover:bg-[#D9E4ED]" 
-            onclick="toggleFaq(this)">
-          <span>${faq.title}</span>
-          <button class="toggle-btn text-xl">+</button>
-        </div>
-        <div class="faq-answer hidden whitespace-pre-line p-[12px] text-[0.95rem] leading-relaxed border-t border-[#E2EBF2]">
-          ${faq.body}
-        </div>
-    `;
+      <div class="faq-question flex justify-between items-center px-6 py-4 text-lg font-semibold 
+                  border-l-[6px] border-[#C19A92] bg-[#FFF5F0] text-[#3B2F2F] 
+                  rounded-lg shadow-md transition-all cursor-pointer 
+                  hover:bg-[#E6AFA3] hover:text-[#FFF5F0] hover:border-[#A67F74] hover:shadow-lg 
+                  active:bg-[#C19A92] active:text-[#FFF5F0] active:shadow-xl active:ring-2 active:ring-[#E6AFA3]"
+                  onclick="toggleFaq(this)">
+        <span>${faq.title}</span>
+        <button class="toggle-btn text-xl text-[#A67F74] transition-transform duration-300">+</button>
+      </div>
+
+      <div class="faq-answer hidden whitespace-pre-line px-6 py-4 text-[1rem] leading-relaxed 
+                  border-t border-[#E6AFA3] bg-[#FFF5F0] text-[#3B2F2F] rounded-b-lg shadow-inner">
+        ${faq.body}
+      </div>
+  `;
 
       faqContentContainer.appendChild(faqItem);
     });
@@ -249,7 +247,7 @@ function performSearch() {
     const query = document.getElementById("faqSearchInput").value.trim();
 
     if (query === "") {
-      alert("검색어를 입력하세요!"); // Prevent empty search
+      alert("Enter a keyword!"); // Prevent empty search
       return;
     }
 

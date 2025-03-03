@@ -20,91 +20,12 @@
       position: relative;
       /* ensures absolute/fixed children are relative to body */
     }
-
-    .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 24px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    border: 2px solid transparent;
-}
-
-/* Primary Button (Matte Black) */
-    .btn-primary {
-        background: #1E1E1E;
-        color: #EAEAEA;
-        border-color: #3B3B3B;
-    }
-
-    .btn-primary:hover {
-        background: #2C2C2C;
-        transform: translateY(-2px);
-        border-color: #5A5A5A;
-        box-shadow: 0 6px 12px rgba(90, 90, 90, 0.4);
-    }
-
-    /* Secondary Button (Gunmetal Grey) */
-    .btn-secondary {
-        background: #3B3B3B;
-        color: #EAEAEA;
-        border-color: #5A5A5A;
-    }
-
-    .btn-secondary:hover {
-        background: #5A5A5A;
-        transform: translateY(-2px);
-        border-color: #8C8C8C;
-    }
-
-    .search-bar {
-      width: 100%;
-      max-width: 400px;
-      padding: 12px;
-      border: 2px solid #808A96;
-      border-radius: 25px;
-      font-size: 16px;
-      text-align: center;
-      outline: none;
-      transition: 0.3s;
-    }
-
-    .search-bar:focus {
-      border-color: #3B434B;
-      box-shadow: 0 0 8px rgba(59, 67, 75, 0.3);
-    }
-
-    footer {
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background: #3B434B;
-      color: white;
-      padding: 15px 0;
-      bottom: 0;
-      margin-top: 100px;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
-      transition: 0.3s ease-in-out;
-    }
-
-    footer a:hover {
-      color: #D9E4ED;
-    }
   </style>
 </head>
 
 <body>
 
-  <!-- Navbars -->
+  <!-- Put your logo here -->
   <header class="absolute top-6 left-12">
     <a href="/">
       <img src="/assets/logo_white.png" alt="White Logo" class="h-7">
@@ -112,13 +33,13 @@
   </header>
 
   <div
-    class="main-container flex flex-col items-center justify-center text-center p-10 bg-[#F6F6F6] shadow-xl rounded-2xl border border-[#808080] max-w-xl w-full relative mt-[120px] mb-[120px]">
+    class="main-container flex flex-col items-center justify-center text-center p-10 bg-white/80 shadow-2xl backdrop-blur-lg rounded-2xl border border-[#C19A92] max-w-xl w-full relative mt-[120px] mb-[120px]">
 
     <!-- Secondary Logo Above Title -->
     <img src="/assets/logo.png" alt="Black Logo" class="h-6 mb-4">
 
-    <h1 class="text-4xl font-extrabold text-[#1C1C1E] mb-6 mt-4">
-      How can I help you?
+    <h1 class="text-4xl font-extrabold text-[#3B2F2F] mb-6 mt-4">
+      Ask me anything
     </h1>
 
     <!-- Search Bar -->
@@ -166,7 +87,7 @@
 
     <!-- Search Input -->
     <input autocomplete="off" x-model="searchQuery" type="text" id="searchQuery" placeholder="Search by keyword"
-      class="search-bar mb-3">
+      class="w-full max-w-lg p-3 border-2 border-[#D8BFB2] rounded-full text-center text-lg bg-[#FFF5F0] text-[#3B2F2F] focus:border-[#C19A92] focus:ring focus:ring-[#F4CBC2] transition-all mb-3">
 
     <!-- Search Button -->
     <button 
@@ -174,9 +95,9 @@
       type="submit" 
       x-bind:disabled="searchQuery.length === 0" 
       x-bind:class="searchQuery.length > 0 
-        ? 'bg-[#6A0DAD] border-[#6A0DAD] text-[#F6F8FA] hover:bg-[#9B30FF] hover:text-[#F6F8FA] transition-all' 
-        : 'bg-[#808080] border-[#808080] text-gray-200 cursor-not-allowed'"
-      class="btn mb-3 mx-auto px-6 py-3 rounded-full shadow-md font-semibold text-lg transition-all">
+      ? 'bg-[#C19A92] border-[#A67F74] text-[#FFF5F0] hover:bg-[#D8BFB2] hover:text-[#3B2F2F] transition-all' 
+      : 'bg-[#E5C1B3] border-[#D8BFB2] text-[#A67F74] cursor-not-allowed'"
+    class="w-full max-w-xs px-6 py-3 rounded-full shadow-md font-semibold text-lg transition-all">
       🔍 Search
   </button>
 
@@ -188,16 +109,16 @@
 
 
     <!-- Subtitle -->
-    <p class="text-lg text-[#333333] mb-6">
+    <p class="text-lg text-[#3B2F2F] mb-6">
       Browse and contact me!
     </p>
 
     <!-- CTA Buttons -->
     <div class="flex space-x-6">
-      <a href="/faq" class="btn btn-primary">
+      <a href="/faq" class="px-6 py-3 bg-[#E6AFA3] text-[#FFF5F0] border-2 border-[#C19A92] rounded-full shadow-md font-semibold transition-all hover:bg-[#C19A92] hover:border-[#A67F74] hover:text-[#3B2F2F] hover:shadow-lg hover:-translate-y-0.5">
         📖 About me
       </a>
-      <a href="mailto:contact@jiwonkwak.co" class="btn btn-secondary">
+      <a href="mailto:contact@jiwonkwak.co" class="px-6 py-3 bg-[#F8D7D0] text-[#3B2F2F] border-2 border-[#E5C1B3] rounded-full shadow-md font-semibold transition-all hover:bg-[#D8BFB2] hover:border-[#C19A92] hover:shadow-lg hover:-translate-y-0.5">
         📨 Contact me
       </a>
     </div>
@@ -205,26 +126,44 @@
   </div>
 
   <!-- Footer (Fixed at bottom, flush with bottom edge) -->
-  <footer class="fixed bottom-0 left-0 w-full text-center text-white p-4">
-    <p class="text-sm">
-      <a>Made with ♥ by Baddie Jiwon</a>
+  <footer class="fixed bottom-0 left-0 w-full text-center bg-[#2B1E1E] text-[#FFF5F0] py-6 mt-24 shadow-xl border-t border-[#C19A92]">
+    <p class="text-sm font-semibold tracking-wide transition-all hover:tracking-widest">
+      Made with <span class="text-[#E6AFA3]">♥</span> by Baddie Jiwon
     </p>
-    <p class="text-sm">
-      <a href="mailto:contact@rebellions.ai" class="underline">contact@jiwonkwak.co</a>
-    </p>
-    <div class="mt-2 flex justify-center space-x-6 items-center">
-      <a href="https://jiwonkwak.co" target="_blank" class="hover:text-gray-300">Website</a>
-      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
-        class="hover:text-gray-300 flex items-center space-x-1">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5">
-        <span>LinkedIn</span>
+    
+    <p class="text-sm mt-1">
+      <a href="mailto:contact@jiwonkwak.co" 
+         class="underline decoration-[#C19A92] decoration-2 hover:text-[#E6AFA3] hover:decoration-[#E6AFA3] transition-all duration-300">
+         ✉️ contact@jiwonkwak.co
       </a>
-      <a href="#" target="_blank" class="hover:text-gray-300 flex items-center space-x-1">
-        <img src="/assets/X.svg" alt="X" class="h-5 w-5">
-        <span>Twitter</span>
+    </p>
+
+    <div class="mt-4 flex justify-center space-x-8 items-center">
+      <!-- Website -->
+      <a href="https://jiwonkwak.co" target="_blank" 
+         class="text-[#FFF5F0] hover:text-[#E6AFA3] hover:underline underline-offset-4 transition-all duration-300">
+        🌐 Website
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/jiwon-kwak/" target="_blank"
+         class="flex items-center space-x-2 text-[#FFF5F0] hover:text-[#E6AFA3] transition-all duration-300">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" 
+             alt="LinkedIn" 
+             class="h-5 w-5 opacity-80 hover:drop-shadow-glow transition-all duration-300">
+        <span class="hover:underline underline-offset-4">LinkedIn</span>
+      </a>
+
+      <!-- Twitter -->
+      <a href="#" target="_blank" 
+         class="flex items-center space-x-2 text-[#FFF5F0] hover:text-[#E6AFA3] transition-all duration-300">
+        <img src="/assets/X.svg" 
+             alt="X" 
+             class="h-5 w-5 opacity-80 hover:drop-shadow-glow transition-all duration-300">
+        <span class="hover:underline underline-offset-4">Twitter</span>
       </a>
     </div>
-  </footer>
+</footer>
   <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 
