@@ -1,7 +1,7 @@
 ---
 title: "My Projects & Tech Stack"
 slug: "projects"
-category: "📑 My Projects & Tech Stack"
+category: "Projects & Tech"
 tags: ["projects", "tech stack", "development", "JavaScript", "GitHub"]
 ---
 # 📑 My Projects & Tech Stack

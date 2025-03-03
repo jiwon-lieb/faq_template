@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
+const { marked } = require("marked"); 
 
 const faqDir = path.join(__dirname, "faq");
 const outputFilePath = path.join(__dirname, "/faq.json");
@@ -17,7 +18,7 @@ const faqData = fs.readdirSync(faqDir)
       slug: data.slug,
       category: data.category || "기타",  // Default to '기타' if no category is set
       tags: data.tags || [],
-      body: content.trim()
+      body: marked.parse(content.trim())
     };
   });
 

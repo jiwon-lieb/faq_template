@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ | Customer Support </title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
     @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
     body {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Montserrat', sans-serif;
       background: url('/assets/background.jpeg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
@@ -58,6 +58,31 @@
       left: 15px;
     }
 
+    .prose h2 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .prose h1 {
+      margin-bottom: 0px;
+    }
+
+    .prose p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .prose ul {
+      margin-top: -25px;
+      margin-bottom: -25px;
+    }
+
+    .prose li {
+      margin-top: -10px;
+      margin-bottom: -10px;
+    }
+
+
   </style>
 </head>
 <body>
@@ -87,12 +112,12 @@
         <a href="mailto:contact@jiwonkwak.co" class="text-[#C19A92] hover:text-[#A67F74] underline">here</a>
       </p>
       <!-- Search box -->
-      <div class="border border-[#D8BFB2] border-gray-300 rounded-full bg-[#FFF5F0] ml-6 mr-0 justify-center items-center px-4 py-2 shadow-sm w-[270px] mt-50">
-        <input type="text" 
-              placeholder="Enter a search word" 
-              class="text-sm text-center w-full px-3 py-2 bg-[#FFF5F0] w-36 text-[#3B2F2F] rounded-full focus:ring-4 focus:ring-[#F4CBC2] transition-all" 
-            id="faqSearchInput"
-            onkeypress="handleKeyPress(event)">
+      <div class="border border-[#D8BFB2] rounded-full bg-[#FFF5F0] ml-6 mr-0 flex justify-center items-center px-4 py-2 shadow-sm w-[270px] mt-50 transition-all focus-within:ring-2 focus-within:ring-[#F4CBC2] focus-within:border-[#C19A92]">
+          <input type="text" 
+                placeholder="Enter a search word" 
+                class="text-sm text-center w-full bg-[#FFF5F0] text-[#3B2F2F] rounded-full outline-none" 
+                id="faqSearchInput"
+                onkeypress="handleKeyPress(event)">
       </div>
       <button 
           class="ml-2 -mr-2 px-4 py-2 text-sm bg-[#C19A92] text-[#FFF5F0] font-medium rounded-full shadow-md transition-all hover:bg-[#D8BFB2] hover:text-[#3B2F2F] hover:shadow-lg hover:-translate-y-0.5"
@@ -165,7 +190,7 @@
         const categoryDiv = document.createElement("div");
         // apply Tailwind classes to faq-category
         categoryDiv.className =
-          "faq-category flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-[#F4CBC2] bg-[#FFF5F0] text-[#5A2E2E] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#FCC9DA] hover:text-[#FFF5F0] hover:border-[#EC96A4] hover:shadow-lg focus:ring-2 focus:ring-[#FCC9DA] focus:bg-[#E6AFA3] focus:text-[#FFF5F0]"
+          "faq-category flex items-center justify-center px-6 py-3 text-m font-bold border-2 border-[#F4CBC2] bg-[#FFF5F0] text-[#5A2E2E] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#FCC9DA] hover:text-[#FFF5F0] hover:border-[#EC96A4] hover:shadow-lg focus:ring-2 focus:ring-[#FCC9DA] focus:bg-[#E6AFA3] focus:text-[#FFF5F0]"
         categoryDiv.classList.add("faq-category");
         categoryDiv.innerText = category.category;
         categoryDiv.onclick = () => showFAQ(category.category, category.faqs);
@@ -217,10 +242,10 @@
         <button class="toggle-btn text-xl text-[#A67F74] transition-transform duration-300">+</button>
       </div>
 
-      <div class="faq-answer hidden whitespace-pre-line px-6 py-4 text-[1rem] leading-relaxed 
-                  border-t border-[#E6AFA3] bg-[#FFF5F0] text-[#3B2F2F] rounded-b-lg shadow-inner">
+      <article class="faq-answer hidden whitespace-pre-line px-6 py-4 text-[1rem] leading-relaxed 
+                  border-t border-[#E6AFA3] bg-[#FFF5F0] text-[#3B2F2F] rounded-b-lg shadow-inner prose">
         ${faq.body}
-      </div>
+      </article>
   `;
 
       faqContentContainer.appendChild(faqItem);

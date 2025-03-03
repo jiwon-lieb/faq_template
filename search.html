@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>검색 결과 | 고객지원</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
     @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -16,7 +16,7 @@
     }
 
     body {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Montserrat', sans-serif;
       background-color: #EFF2F5;
       display: flex;
       flex-direction: column;
@@ -219,7 +219,7 @@
                   <span class="text-lg">${faq.title}</span>
                   <button class="toggle-btn text-xl">+</button>
                 </div>
-                <div class="faq-answer text-left">${faq.body}</div>
+                <div class="faq-answer text-left prose">${faq.body}</div>
               </div>
             `).join("");
       } catch (error) {

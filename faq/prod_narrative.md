@@ -1,7 +1,7 @@
 ---
 title: "Product Narrative & Content Strategy"
 slug: "product-narrative"
-category: "👩‍💻 About Me & My Work"
+category: "About Me & Work"
 tags: ["technical writing", "content strategy", "product narrative"]
 ---
 ## Defining a Clear Narrative for Rebellions

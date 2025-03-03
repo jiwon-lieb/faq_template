@@ -1,18 +1,18 @@
 ---
 title: "Tools, Writing & Development Process"
 slug: "process"
-category: "🛠️ Tools, Writing & Development Process"
+category: "Tools & Process"
 tags: ["tools", "API documentation", "DevRel", "workflow"]
 ---
-# 🛠️ My Process: Writing, Development & Community Building
+# My Process: Writing, Development & Community Building
 
-## ✍️ Writing Process
+## Writing Process
 I ensure my documentation follows **three key principles**:
 1. **🔎 Clarity** – Simple, structured, and easy to read.
 2. **💡 Developer-Friendly** – Code samples, best practices.
 3. **🎨 Engaging** – Well-designed UI, interactivity.
 
-## 🚀 My Developer Workflow
+## My Developer Workflow
 I use a **content-first approach** when writing **technical documentation**:
 - **Step 1:** Research & prototype.
 - **Step 2:** Write structured documentation.

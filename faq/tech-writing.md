@@ -1,7 +1,7 @@
 ---
 title: "My Technical Writing Philosophy"
 slug: "tech-writing-style"
-category: "👩‍💻 About Me & My Work"
+category: "About Me & Work"
 tags: ["technical writing", "best practices", "writing style"]
 ---
 # ✍️ My Technical Writing Philosophy

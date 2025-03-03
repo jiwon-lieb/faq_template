@@ -1,6 +1,6 @@
 [
   {
-    "category": "👩‍💻 About Me & My Work",
+    "category": "About Me & Work",
     "faqs": [
       {
         "title": "About Me & My Work",
@@ -12,7 +12,7 @@
           "multilingual",
           "career"
         ],
-        "body": "# 👩‍💻 About Me & My Work\n\n## 🌟 Who Am I?\nI'm **Jiwon Kwak**, a **technical writer, DevRel specialist, and frontend developer**. My background in **AI documentation, developer advocacy, and multilingual communication** makes me a **bridge between technical teams and their audience**.\n\nI've worked on **cutting-edge AI chips, DevRel community projects, and frontend UI development**, ensuring that **complex technologies are easy to understand and use**.\n\n## 🎯 My Specialties\n- **📖 Technical Writing** – AI accelerators, compilers, API docs.\n- **🚀 Developer Relations (DevRel)** – Community building, content creation.\n- **🎨 Frontend Development** – Interactive documentation, UI/UX design.\n- **🌍 Multilingual Expertise** – English, German, Korean, French.\n\n💡 **Personal Website:** [jiwonkwak.co](https://jiwonkwak.co)  \n📩 **Contact:** [contact@jiwonkwak.co](mailto:contact@jiwonkwak.co)"
+        "body": "<h1>👩‍💻 About Me &amp; My Work</h1>\n<h2>🌟 Who Am I?</h2>\n<p>I&#39;m <strong>Jiwon Kwak</strong>, a <strong>technical writer, DevRel specialist, and frontend developer</strong>. My background in <strong>AI documentation, developer advocacy, and multilingual communication</strong> makes me a <strong>bridge between technical teams and their audience</strong>.</p>\n<p>I&#39;ve worked on <strong>cutting-edge AI chips, DevRel community projects, and frontend UI development</strong>, ensuring that <strong>complex technologies are easy to understand and use</strong>.</p>\n<h2>🎯 My Specialties</h2>\n<ul>\n<li><strong>📖 Technical Writing</strong> – AI accelerators, compilers, API docs.</li>\n<li><strong>🚀 Developer Relations (DevRel)</strong> – Community building, content creation.</li>\n<li><strong>🎨 Frontend Development</strong> – Interactive documentation, UI/UX design.</li>\n<li><strong>🌍 Multilingual Expertise</strong> – English, German, Korean, French.</li>\n</ul>\n<p>💡 <strong>Personal Website:</strong> <a href=\"https://jiwonkwak.co\">jiwonkwak.co</a><br>📩 <strong>Contact:</strong> <a href=\"mailto:contact@jiwonkwak.co\">contact@jiwonkwak.co</a></p>\n"
       },
       {
         "title": "API Documentation Course",
@@ -22,7 +22,7 @@
           "education",
           "course"
         ],
-        "body": "# 📖 API Documentation\n\n## 📌 Overview\nThis **course is designed for beginners** who want to **learn technical writing with APIs**. I created it to bridge the gap between **non-technical writers** and **developer-friendly documentation**.\n\n## 🛠️ Tools Covered\n✅ **Markdown & API Blueprint**  \n✅ **Postman & OpenAPI**  \n✅ **Git & Version Control for Docs**  \n✅ **UI/UX for Docs**  \n\n## 🎯 Course Goals\n- Teach **practical API documentation skills**.\n- Help **non-technical writers** break into tech.\n- Create a **hands-on experience with live APIs**.\n\n## 📂 Course Materials\n🔗 **Coming Soon!**"
+        "body": "<h1>📖 API Documentation</h1>\n<h2>📌 Overview</h2>\n<p>This <strong>course is designed for beginners</strong> who want to <strong>learn technical writing with APIs</strong>. I created it to bridge the gap between <strong>non-technical writers</strong> and <strong>developer-friendly documentation</strong>.</p>\n<h2>🛠️ Tools Covered</h2>\n<p>✅ <strong>Markdown &amp; API Blueprint</strong><br>✅ <strong>Postman &amp; OpenAPI</strong><br>✅ <strong>Git &amp; Version Control for Docs</strong><br>✅ <strong>UI/UX for Docs</strong>  </p>\n<h2>🎯 Course Goals</h2>\n<ul>\n<li>Teach <strong>practical API documentation skills</strong>.</li>\n<li>Help <strong>non-technical writers</strong> break into tech.</li>\n<li>Create a <strong>hands-on experience with live APIs</strong>.</li>\n</ul>\n<h2>📂 Course Materials</h2>\n<p>🔗 <strong>Coming Soon!</strong></p>\n"
       },
       {
         "title": "Product Narrative & Content Strategy",
@@ -32,7 +32,7 @@
           "content strategy",
           "product narrative"
         ],
-        "body": "## Defining a Clear Narrative for Rebellions\n\nOne of the biggest challenges at Rebellions was the lack of a unified **product narrative**. With multiple stakeholders creating content independently, inconsistencies arose in tone, messaging, and clarity. To fix this, I led the creation of a **Product Narrative Sheet**, working closely with engineers, marketing, and leadership. \n\n### **What I Did**\n- Consolidated existing product messaging to **ensure consistency**.\n- Aligned technical, business, and marketing teams under a **single content direction**.\n- Introduced a streamlined workflow, reducing content review cycles by **30%**.\n\n### **Impact**\n✅ Improved content clarity across marketing materials, white papers, and website copy.  \n✅ Faster approval process, as all stakeholders aligned on messaging from the start.  \n✅ A structured **reference document** for engineers and marketing teams to use moving forward."
+        "body": "<h2>Defining a Clear Narrative for Rebellions</h2>\n<p>One of the biggest challenges at Rebellions was the lack of a unified <strong>product narrative</strong>. With multiple stakeholders creating content independently, inconsistencies arose in tone, messaging, and clarity. To fix this, I led the creation of a <strong>Product Narrative Sheet</strong>, working closely with engineers, marketing, and leadership. </p>\n<h3><strong>What I Did</strong></h3>\n<ul>\n<li>Consolidated existing product messaging to <strong>ensure consistency</strong>.</li>\n<li>Aligned technical, business, and marketing teams under a <strong>single content direction</strong>.</li>\n<li>Introduced a streamlined workflow, reducing content review cycles by <strong>30%</strong>.</li>\n</ul>\n<h3><strong>Impact</strong></h3>\n<p>✅ Improved content clarity across marketing materials, white papers, and website copy.<br>✅ Faster approval process, as all stakeholders aligned on messaging from the start.<br>✅ A structured <strong>reference document</strong> for engineers and marketing teams to use moving forward.</p>\n"
       },
       {
         "title": "My Technical Writing Philosophy",
@@ -42,12 +42,12 @@
           "best practices",
           "writing style"
         ],
-        "body": "# ✍️ My Technical Writing Philosophy\n\n## 🏆 My Core Writing Principles\n1. **🧩 Clarity First** – No unnecessary jargon.\n2. **🎨 UI/UX Matters** – Good documentation is **designed well**.\n3. **🛠️ Developer-Centric** – Docs should **solve problems**.\n\n## ✍️ Writing Process\n| Step | Description |\n|------|------------|\n| **Research** | Understand the product & audience |\n| **Structure** | Plan clear sections & headings |\n| **Write** | Keep content simple, active voice |\n| **Test & Revise** | Get feedback from engineers & users |\n\n## 🚀 Writing Tools\n✅ **Markdown & Docusaurus**  \n✅ **API Blueprint for API Docs**  \n✅ **Figma for Visuals**"
+        "body": "<h1>✍️ My Technical Writing Philosophy</h1>\n<h2>🏆 My Core Writing Principles</h2>\n<ol>\n<li><strong>🧩 Clarity First</strong> – No unnecessary jargon.</li>\n<li><strong>🎨 UI/UX Matters</strong> – Good documentation is <strong>designed well</strong>.</li>\n<li><strong>🛠️ Developer-Centric</strong> – Docs should <strong>solve problems</strong>.</li>\n</ol>\n<h2>✍️ Writing Process</h2>\n<table>\n<thead>\n<tr>\n<th>Step</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Research</strong></td>\n<td>Understand the product &amp; audience</td>\n</tr>\n<tr>\n<td><strong>Structure</strong></td>\n<td>Plan clear sections &amp; headings</td>\n</tr>\n<tr>\n<td><strong>Write</strong></td>\n<td>Keep content simple, active voice</td>\n</tr>\n<tr>\n<td><strong>Test &amp; Revise</strong></td>\n<td>Get feedback from engineers &amp; users</td>\n</tr>\n</tbody></table>\n<h2>🚀 Writing Tools</h2>\n<p>✅ <strong>Markdown &amp; Docusaurus</strong><br>✅ <strong>API Blueprint for API Docs</strong><br>✅ <strong>Figma for Visuals</strong></p>\n"
       }
     ]
   },
   {
-    "category": "🚀 Career & Learning Journey",
+    "category": "Career Journey",
     "faqs": [
       {
         "title": "Career & Learning Journey",
@@ -58,12 +58,12 @@
           "learning",
           "self-improvement"
         ],
-        "body": "# 🚀 Career & Learning Journey\n\n## 🔥 From Translator to Tech & DevRel\nMy journey started in **interpretation & translation**, but my curiosity led me into **technical writing, frontend development, and DevRel**.\n\nI transitioned into **AI documentation**, where I worked on **AI accelerators, compilers, and large-scale API docs**. Now, I create engaging, developer-friendly documentation and work on **community building**.\n\n## 📚 What I’m Learning Now\n- **JavaScript for frontend enhancements**.\n- **Building & scaling developer communities**.\n- **Advanced DevRel strategies**.\n\n## 🌟 Future Goals\n- **Create Online Courses** for new tech writers.\n- **Develop More DevRel Content** (blogs, tutorials, events).\n- **Expand My Frontend Skills** with React & Next.js.\n\n---\n💡 **Career Tip:**  \n*\"Always stay adaptable. The best skills are the ones that help you evolve.\"* 🚀"
+        "body": "<h1>Career &amp; Learning Journey</h1>\n<h2>From Translator to Tech &amp; DevRel</h2>\n<p>My journey started in <strong>interpretation &amp; translation</strong>, but my curiosity led me into <strong>technical writing, frontend development, and DevRel</strong>.</p>\n<p>I transitioned into <strong>AI documentation</strong>, where I worked on <strong>AI accelerators, compilers, and large-scale API docs</strong>. Now, I create engaging, developer-friendly documentation and work on <strong>community building</strong>.</p>\n<h2>What I’m Learning Now</h2>\n<ul>\n<li><strong>JavaScript for frontend enhancements</strong>.</li>\n<li><strong>Building &amp; scaling developer communities</strong>.</li>\n<li><strong>Advanced DevRel strategies</strong>.</li>\n</ul>\n<h2>Future Goals</h2>\n<ul>\n<li><strong>Create Online Courses</strong> for new tech writers.</li>\n<li><strong>Develop More DevRel Content</strong> (blogs, tutorials, events).</li>\n<li><strong>Expand My Frontend Skills</strong> with React &amp; Next.js.</li>\n</ul>\n<hr>\n<p>💡 <strong>Career Tip:</strong><br><em>&quot;Always stay adaptable. The best skills are the ones that help you evolve.&quot;</em> 🚀</p>\n"
       }
     ]
   },
   {
-    "category": "🛠️ Tools, Writing & Development Process",
+    "category": "Tools & Process",
     "faqs": [
       {
         "title": "Tools, Writing & Development Process",
@@ -74,12 +74,12 @@
           "DevRel",
           "workflow"
         ],
-        "body": "# 🛠️ My Process: Writing, Development & Community Building\n\n## ✍️ Writing Process\nI ensure my documentation follows **three key principles**:\n1. **🔎 Clarity** – Simple, structured, and easy to read.\n2. **💡 Developer-Friendly** – Code samples, best practices.\n3. **🎨 Engaging** – Well-designed UI, interactivity.\n\n## 🚀 My Developer Workflow\nI use a **content-first approach** when writing **technical documentation**:\n- **Step 1:** Research & prototype.\n- **Step 2:** Write structured documentation.\n- **Step 3:** Add visuals, UI/UX elements.\n- **Step 4:** Test & improve through DevRel feedback.\n\n## 🔧 Favorite Tools\n| Category      | Tools |\n|--------------|----------------|\n| **Docs**     | Markdown, API Blueprint, Notion |\n| **Frontend** | TailwindCSS, AlpineJS, Figma |\n| **DevRel**   | Discord, Twitter, GitHub |\n| **APIs**     | Postman, Swagger, OpenAPI |"
+        "body": "<h1>My Process: Writing, Development &amp; Community Building</h1>\n<h2>Writing Process</h2>\n<p>I ensure my documentation follows <strong>three key principles</strong>:</p>\n<ol>\n<li><strong>🔎 Clarity</strong> – Simple, structured, and easy to read.</li>\n<li><strong>💡 Developer-Friendly</strong> – Code samples, best practices.</li>\n<li><strong>🎨 Engaging</strong> – Well-designed UI, interactivity.</li>\n</ol>\n<h2>My Developer Workflow</h2>\n<p>I use a <strong>content-first approach</strong> when writing <strong>technical documentation</strong>:</p>\n<ul>\n<li><strong>Step 1:</strong> Research &amp; prototype.</li>\n<li><strong>Step 2:</strong> Write structured documentation.</li>\n<li><strong>Step 3:</strong> Add visuals, UI/UX elements.</li>\n<li><strong>Step 4:</strong> Test &amp; improve through DevRel feedback.</li>\n</ul>\n<h2>🔧 Favorite Tools</h2>\n<table>\n<thead>\n<tr>\n<th>Category</th>\n<th>Tools</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Docs</strong></td>\n<td>Markdown, API Blueprint, Notion</td>\n</tr>\n<tr>\n<td><strong>Frontend</strong></td>\n<td>TailwindCSS, AlpineJS, Figma</td>\n</tr>\n<tr>\n<td><strong>DevRel</strong></td>\n<td>Discord, Twitter, GitHub</td>\n</tr>\n<tr>\n<td><strong>APIs</strong></td>\n<td>Postman, Swagger, OpenAPI</td>\n</tr>\n</tbody></table>\n"
       }
     ]
   },
   {
-    "category": "📑 My Projects & Tech Stack",
+    "category": "Projects & Tech",
     "faqs": [
       {
         "title": "My Projects & Tech Stack",
@@ -91,7 +91,7 @@
           "JavaScript",
           "GitHub"
         ],
-        "body": "# 📑 My Projects & Tech Stack\n\n## 🛠️ Featured Projects\n\n### 📌 **FAQ Portfolio (This Project)**\n- **🛠️ Stack:** TailwindCSS, JavaScript, AlpineJS.\n- **🎯 Purpose:** A dynamic, interactive **FAQ-style portfolio**.\n- **🚀 Features:** Active category states, responsive UI, structured content.\n\n### 🧩 **Chrome Extension: Word Saver**\n- **🛠️ Stack:** JavaScript, Chrome API (Manifest V3).\n- **🎯 Purpose:** A **tool for language learners** to save words while browsing.\n- **📂 GitHub:** [Word Saver](https://github.com/jiwon-lieb/chrome-extension)\n\n### 🌦️ **Weather App with AI Pep Talks**\n- **🛠️ Stack:** JavaScript, OpenWeather API, Hugging Face API.\n- **🎯 Purpose:** **Combines weather + AI-generated motivational messages**.\n- **📂 GitHub:** [Weather Pep Talk](https://github.com/jiwon-lieb/weather-pep-talk)\n\n## ⚙️ **Tech Stack**\n| Category         | Tools & Languages |\n|-----------------|------------------|\n| **Frontend**    | JavaScript, HTML, TailwindCSS |\n| **Docs & APIs** | Markdown, Docusaurus, API Blueprint |\n| **DevOps**      | GitHub Actions, CI/CD Pipelines |\n| **Other**       | Postman, Figma, Chrome Extensions |\n\n🔗 **More Projects on GitHub:** [jiwon-lieb](https://github.com/jiwon-lieb)"
+        "body": "<h1>📑 My Projects &amp; Tech Stack</h1>\n<h2>🛠️ Featured Projects</h2>\n<h3>📌 <strong>FAQ Portfolio (This Project)</strong></h3>\n<ul>\n<li><strong>🛠️ Stack:</strong> TailwindCSS, JavaScript, AlpineJS.</li>\n<li><strong>🎯 Purpose:</strong> A dynamic, interactive <strong>FAQ-style portfolio</strong>.</li>\n<li><strong>🚀 Features:</strong> Active category states, responsive UI, structured content.</li>\n</ul>\n<h3>🧩 <strong>Chrome Extension: Word Saver</strong></h3>\n<ul>\n<li><strong>🛠️ Stack:</strong> JavaScript, Chrome API (Manifest V3).</li>\n<li><strong>🎯 Purpose:</strong> A <strong>tool for language learners</strong> to save words while browsing.</li>\n<li><strong>📂 GitHub:</strong> <a href=\"https://github.com/jiwon-lieb/chrome-extension\">Word Saver</a></li>\n</ul>\n<h3>🌦️ <strong>Weather App with AI Pep Talks</strong></h3>\n<ul>\n<li><strong>🛠️ Stack:</strong> JavaScript, OpenWeather API, Hugging Face API.</li>\n<li><strong>🎯 Purpose:</strong> <strong>Combines weather + AI-generated motivational messages</strong>.</li>\n<li><strong>📂 GitHub:</strong> <a href=\"https://github.com/jiwon-lieb/weather-pep-talk\">Weather Pep Talk</a></li>\n</ul>\n<h2>⚙️ <strong>Tech Stack</strong></h2>\n<table>\n<thead>\n<tr>\n<th>Category</th>\n<th>Tools &amp; Languages</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Frontend</strong></td>\n<td>JavaScript, HTML, TailwindCSS</td>\n</tr>\n<tr>\n<td><strong>Docs &amp; APIs</strong></td>\n<td>Markdown, Docusaurus, API Blueprint</td>\n</tr>\n<tr>\n<td><strong>DevOps</strong></td>\n<td>GitHub Actions, CI/CD Pipelines</td>\n</tr>\n<tr>\n<td><strong>Other</strong></td>\n<td>Postman, Figma, Chrome Extensions</td>\n</tr>\n</tbody></table>\n<p>🔗 <strong>More Projects on GitHub:</strong> <a href=\"https://github.com/jiwon-lieb\">jiwon-lieb</a></p>\n"
       }
     ]
   }

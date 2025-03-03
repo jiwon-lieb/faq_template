@@ -1,7 +1,7 @@
 ---
 title: "API Documentation Course"
 slug: "api-doc-course"
-category: "👩‍💻 About Me & My Work"
+category: "About Me & Work"
 tags: ["API documentation", "education", "course"]
 ---
 # 📖 API Documentation
