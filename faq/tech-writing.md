@@ -7,9 +7,9 @@ tags: ["technical writing", "best practices", "writing style"]
 # My Technical Writing Philosophy and Work Style
 
 ## My Core Writing Principles
-1. ** Clarity First** – No unnecessary jargon.
-2. ** UI/UX Matters** – Good documentation is **designed well**.
-3. ** Developer-Centric** – Docs should **solve problems**.
+1. **Clarity First** – No unnecessary jargon.
+2. **UI/UX Matters** – Good documentation is **designed well**.
+3. **Developer-Centric** – Docs should **solve problems**.
 
 ## Writing Process
 | Step | Description |

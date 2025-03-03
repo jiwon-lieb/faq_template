@@ -31,12 +31,12 @@ Once the API was functional, I focused on API documentation to make it developer
 - Example Requests: Postman examples for testing
 - Usage Guidelines: Best practices for integrating the API
 
-📌 Check out the API Docs here: []
+📌 Check out the API Docs [here](https://techwriting-project.gitbook.io/mbti-peptalk-api-docs/mbti-api)
 
 ## Final Takeaways & GitHub Repo
 
 This project helped me improve both my backend and technical writing skills. Creating an API from scratch gave me a deeper understanding of the developer’s perspective, making me a better API writer.
 
-🔗 GitHub Repo (API): []
+🔗 GitHub Repo (API): [https://github.com/jiwon-lieb/mbti_peptalk]
 
 If you’re interested in API documentation or want to try writing your own API docs, feel free to fork the repo and experiment! 
