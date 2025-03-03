@@ -4,31 +4,32 @@ slug: "projects"
 category: "Projects & Tech"
 tags: ["projects", "tech stack", "development", "JavaScript", "GitHub"]
 ---
-# 📑 My Projects & Tech Stack
+# My Projects & Tech Stack
 
-## 🛠️ Featured Projects
+## Projects
 
-### 📌 **FAQ Portfolio (This Project)**
-- **🛠️ Stack:** TailwindCSS, JavaScript, AlpineJS.
-- **🎯 Purpose:** A dynamic, interactive **FAQ-style portfolio**.
-- **🚀 Features:** Active category states, responsive UI, structured content.
+### **FAQ Portfolio (This Project)**
+- **Stack:** TailwindCSS, JavaScript, Eleventy, AlpineJS.
+- **Purpose:** A dynamic, interactive **FAQ-style portfolio**.
+- **Features:** Active category states, responsive UI, structured content.
 
-### 🧩 **Chrome Extension: Word Saver**
-- **🛠️ Stack:** JavaScript, Chrome API (Manifest V3).
-- **🎯 Purpose:** A **tool for language learners** to save words while browsing.
-- **📂 GitHub:** [Word Saver](https://github.com/jiwon-lieb/chrome-extension)
+### MBTI Pep Talk API
+- **Stack**: Django REST Framework (DRF), PostgreSQL, Netlify Functions (initial version), Deployed on [API Server]
+- **Purpose**: Provides personalized pep talks based on MBTI personality type and emotional state. Supports English and Korean and CRUD operations.
+- **GitHub**: [Insert GitHub Link]
 
-### 🌦️ **Weather App with AI Pep Talks**
-- **🛠️ Stack:** JavaScript, OpenWeather API, Hugging Face API.
-- **🎯 Purpose:** **Combines weather + AI-generated motivational messages**.
-- **📂 GitHub:** [Weather Pep Talk](https://github.com/jiwon-lieb/weather-pep-talk)
+### MBTI Pep Talk App
+- **Stack**: HTML, CSS, JavaScript (Vanilla)
+- **Purpose**: A simple frontend application that fetches pep talks from the API based on user-selected MBTI type and mood. Features real-time language switching and an interactive UI.
+- **GitHub**: [Insert GitHub Link]
 
-## ⚙️ **Tech Stack**
+
+## **Tech Stack**
 | Category         | Tools & Languages |
 |-----------------|------------------|
 | **Frontend**    | JavaScript, HTML, TailwindCSS |
-| **Docs & APIs** | Markdown, Docusaurus, API Blueprint |
+| **Docs & APIs** | Markdown, Docusaurus, Postman, Eleventy, Mkdocs |
 | **DevOps**      | GitHub Actions, CI/CD Pipelines |
-| **Other**       | Postman, Figma, Chrome Extensions |
+| **Other**       | Postman, Figma |
 
 🔗 **More Projects on GitHub:** [jiwon-lieb](https://github.com/jiwon-lieb)

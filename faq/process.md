@@ -4,7 +4,7 @@ slug: "process"
 category: "Tools & Process"
 tags: ["tools", "API documentation", "DevRel", "workflow"]
 ---
-# My Process: Writing, Development & Community Building
+# My Process: Writing, Development
 
 ## Writing Process
 I ensure my documentation follows **three key principles**:
@@ -17,12 +17,11 @@ I use a **content-first approach** when writing **technical documentation**:
 - **Step 1:** Research & prototype.
 - **Step 2:** Write structured documentation.
 - **Step 3:** Add visuals, UI/UX elements.
-- **Step 4:** Test & improve through DevRel feedback.
+- **Step 4:** Test & improve through feedback.
 
 ## 🔧 Favorite Tools
 | Category      | Tools |
 |--------------|----------------|
-| **Docs**     | Markdown, API Blueprint, Notion |
+| **Docs**     | Markdown, SSG (Eleventy, Docusaurus), Notion |
 | **Frontend** | TailwindCSS, AlpineJS, Figma |
-| **DevRel**   | Discord, Twitter, GitHub |
 | **APIs**     | Postman, Swagger, OpenAPI |

@@ -7,14 +7,13 @@ tags: ["career", "tech industry", "learning", "self-improvement"]
 # Career & Learning Journey
 
 ## From Translator to Tech & DevRel
-My journey started in **interpretation & translation**, but my curiosity led me into **technical writing, frontend development, and DevRel**.
+My journey started in **interpretation & translation**, but my curiosity led me into **technical writing, frontend development**.
 
-I transitioned into **AI documentation**, where I worked on **AI accelerators, compilers, and large-scale API docs**. Now, I create engaging, developer-friendly documentation and work on **community building**.
+I transitioned into **AI documentation**, where I worked on **AI accelerators, compilers, and large-scale API docs**. Now, I am delving deeper into different tools and web programming to create engaging, developer-friendly documentation.
 
 ## What I’m Learning Now
 - **JavaScript for frontend enhancements**.
-- **Building & scaling developer communities**.
-- **Advanced DevRel strategies**.
+- **Static Site Generators**
 
 ## Future Goals
 - **Create Online Courses** for new tech writers.

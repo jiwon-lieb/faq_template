@@ -11,7 +11,7 @@ One of the biggest challenges at Rebellions was the lack of a unified **product 
 ### **What I Did**
 - Consolidated existing product messaging to **ensure consistency**.
 - Aligned technical, business, and marketing teams under a **single content direction**.
-- Introduced a streamlined workflow, reducing content review cycles by **30%**.
+- Introduced a streamlined workflow, reducing content review cycles.
 
 ### **Impact**
 ✅ Improved content clarity across marketing materials, white papers, and website copy.  
