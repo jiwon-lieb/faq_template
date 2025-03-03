@@ -34,13 +34,13 @@
     }
 
     .faq-category.active {
-    background: #E6AFA3;
-    color: #FFF5F0;
-    box-shadow: 2px 5px 15px rgba(230, 175, 163, 0.4);
-    border: 2px solid #F4CBC2; 
+    background: #FCC9DA; /* Soft Chic Pink */
+    color: #5A2E2E; 
+    box-shadow: 2px 5px 15px rgba(252, 201, 218, 0.4); 
+    border: 2px solid #F4B6C2;  
     border-radius: 50px; 
     transition: all 0.3s ease-in-out;
-    }
+}
 
     .faq-content {
       display: flex;
@@ -70,24 +70,24 @@
   </header>
 
 <!-- FAQ Container -->
-<div class="faq-container flex flex-row justify-between w-full max-w-[1000px] mt-[120px] mb-[100px] flex-grow p-7 bg-white/80 shadow-2xl backdrop-blur-lg rounded-2xl border border-[#C19A92] min-h-[650px] overflow-hidden items-start">
+<div class="faq-container flex flex-row justify-between w-full max-w-[1000px] mt-[120px] mb-[80px] flex-grow p-7 bg-white/80 shadow-2xl backdrop-blur-lg rounded-2xl border border-[#C19A92] min-h-[700px] overflow-hidden items-start">
   <!-- Left Column: Categories -->
   <div class="flex flex-col w-[260px] justify-start mx-[10px] pr-4">
     <!-- Title -->
-    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mb-[10px] text-[#3B2F2F]">Categories</h2>
+    <h2 class="text-[1.75rem] font-bold p-[12px] text-center mt-3 mb-[22px] text-[#3B2F2F]">Categories</h2>
     <!-- Categories -->
     <div class="flex flex-col gap-2 min-w-[220px] max-h-[500px] overflow-y-auto pr-2 rounded-2xl" id="faq-categories"></div>
   </div>
   <!-- Right Column: FAQ Content -->
   <div class="flex flex-col flex-grow pl-[25px] gap-[15px] border-l-2 border-[#C19A92] overflow-y-auto min-h-[650px] self-stretch">
     <!-- FAQ Contact -->
-    <div class="text-lg font-semibold text-[#3B434B] flex items-center whitespace-nowrap -ml-3 my-[10px] mb-[9px] p-[9px]">
+    <div class="text-lg font-semibold text-[#3B434B] flex items-center whitespace-nowrap -ml-3 my-[10px] mb-[10px] p-[9px]">
       <p>
-        Want to know me more? Contact me
+        Want to know more? Contact me
         <a href="mailto:contact@jiwonkwak.co" class="text-[#C19A92] hover:text-[#A67F74] underline">here</a>
       </p>
       <!-- Search box -->
-      <div class="border border-[#D8BFB2] border-gray-300 rounded-full bg-[#FFF5F0] ml-2 flex justify-center items-center px-4 py-2 shadow-sm w-[270px] mt-50">
+      <div class="border border-[#D8BFB2] border-gray-300 rounded-full bg-[#FFF5F0] ml-6 mr-0 justify-center items-center px-4 py-2 shadow-sm w-[270px] mt-50">
         <input type="text" 
               placeholder="Enter a search word" 
               class="text-sm text-center w-full px-3 py-2 bg-[#FFF5F0] w-36 text-[#3B2F2F] rounded-full focus:ring-4 focus:ring-[#F4CBC2] transition-all" 
@@ -106,7 +106,7 @@
 </div>
 
   <!-- Fixed Footer -->
-  <footer class="fixed bottom-0 left-0 w-full text-center bg-[#2B1E1E] text-[#FFF5F0] py-6 mt-24 shadow-xl border-t border-[#C19A92]">
+  <footer class="relative bottom-0 left-0 w-full text-center bg-[#2B1E1E] text-[#FFF5F0] py-6 mt-10 shadow-xl border-t border-[#C19A92]">
     <p class="text-sm font-semibold tracking-wide transition-all hover:tracking-widest">
       Made with <span class="text-[#E6AFA3]">♥</span> by Baddie Jiwon
     </p>
@@ -165,7 +165,7 @@
         const categoryDiv = document.createElement("div");
         // apply Tailwind classes to faq-category
         categoryDiv.className =
-          "faq-category flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-[#C19A92] bg-[#FFF5F0] text-[#3B2F2F] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#E6AFA3] hover:text-[#FFF5F0] hover:border-[#A67F74] hover:shadow-lg focus:ring-2 focus:ring-[#E6AFA3] focus:bg-[#C19A92] focus:text-[#FFF5F0]"
+          "faq-category flex items-center justify-center px-6 py-3 text-lg font-semibold border-2 border-[#F4CBC2] bg-[#FFF5F0] text-[#5A2E2E] rounded-full shadow-md transition-all cursor-pointer hover:bg-[#FCC9DA] hover:text-[#FFF5F0] hover:border-[#EC96A4] hover:shadow-lg focus:ring-2 focus:ring-[#FCC9DA] focus:bg-[#E6AFA3] focus:text-[#FFF5F0]"
         categoryDiv.classList.add("faq-category");
         categoryDiv.innerText = category.category;
         categoryDiv.onclick = () => showFAQ(category.category, category.faqs);
@@ -207,7 +207,7 @@
       faqItem.classList.add("faq-item");
 
       faqItem.innerHTML = `
-      <div class="faq-question flex justify-between items-center px-6 py-4 text-lg font-semibold 
+      <div class="flex justify-between items-center px-6 py-4 text-lg font-semibold
                   border-l-[6px] border-[#C19A92] bg-[#FFF5F0] text-[#3B2F2F] 
                   rounded-lg shadow-md transition-all cursor-pointer 
                   hover:bg-[#E6AFA3] hover:text-[#FFF5F0] hover:border-[#A67F74] hover:shadow-lg 

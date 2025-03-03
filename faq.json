@@ -1,66 +1,97 @@
 [
   {
-    "category": "RBLN SDK",
+    "category": "👩‍💻 About Me & My Work",
     "faqs": [
       {
-        "title": "RBLN SDK를 어떻게 사용하나요?",
-        "slug": "how-to-use-rbln-sdk",
+        "title": "About Me & My Work",
+        "slug": "about-me",
         "tags": [
-          "installation",
-          "setup"
+          "technical writing",
+          "DevRel",
+          "frontend",
+          "multilingual",
+          "career"
         ],
-        "body": "RBLN SDK를 사용하기 위해서는 RBLN 드라이버(driver), 컴파일러(compiler), 모델주(Model Zoo)의 적절한 버전을 설치해야 합니다.\n\n1. RBLN 드라이버를 설치합니다.\n2. RBLN 컴파일러를 설치합니다.\n3. 모델주를 확인하여 원하는 모델이 RBLN SDK로 지원되는지 확인합니다.\n4. 샘플코드를 실행하여 문제가 없는지 확인합니다.\n\n더 자세한 내용은 <a href=\"https://rebellions.ai/docs/sdk\" class=\"underline\" target=\"_blank\">SDK Installation Guide</a>에서 확인해주세요."
+        "body": "# 👩‍💻 About Me & My Work\n\n## 🌟 Who Am I?\nI'm **Jiwon Kwak**, a **technical writer, DevRel specialist, and frontend developer**. My background in **AI documentation, developer advocacy, and multilingual communication** makes me a **bridge between technical teams and their audience**.\n\nI've worked on **cutting-edge AI chips, DevRel community projects, and frontend UI development**, ensuring that **complex technologies are easy to understand and use**.\n\n## 🎯 My Specialties\n- **📖 Technical Writing** – AI accelerators, compilers, API docs.\n- **🚀 Developer Relations (DevRel)** – Community building, content creation.\n- **🎨 Frontend Development** – Interactive documentation, UI/UX design.\n- **🌍 Multilingual Expertise** – English, German, Korean, French.\n\n💡 **Personal Website:** [jiwonkwak.co](https://jiwonkwak.co)  \n📩 **Contact:** [contact@jiwonkwak.co](mailto:contact@jiwonkwak.co)"
       },
       {
-        "title": "샘플 코드는 어디에 있나요?",
-        "slug": "sample-code",
+        "title": "API Documentation Course",
+        "slug": "api-doc-course",
         "tags": [
-          "sample code",
-          "model zoo",
-          "examples"
+          "API documentation",
+          "education",
+          "course"
         ],
-        "body": "Rebellions Model Zoo provides code examples for different models that you can optimize and test in our RBLN online documentation. You can find the code examples for each model on the following pages under the Task column:</br></br>\n\n- HuggingFace\n- Pytorch\n- Tensorflow"
+        "body": "# 📖 API Documentation\n\n## 📌 Overview\nThis **course is designed for beginners** who want to **learn technical writing with APIs**. I created it to bridge the gap between **non-technical writers** and **developer-friendly documentation**.\n\n## 🛠️ Tools Covered\n✅ **Markdown & API Blueprint**  \n✅ **Postman & OpenAPI**  \n✅ **Git & Version Control for Docs**  \n✅ **UI/UX for Docs**  \n\n## 🎯 Course Goals\n- Teach **practical API documentation skills**.\n- Help **non-technical writers** break into tech.\n- Create a **hands-on experience with live APIs**.\n\n## 📂 Course Materials\n🔗 **Coming Soon!**"
+      },
+      {
+        "title": "Product Narrative & Content Strategy",
+        "slug": "product-narrative",
+        "tags": [
+          "technical writing",
+          "content strategy",
+          "product narrative"
+        ],
+        "body": "## Defining a Clear Narrative for Rebellions\n\nOne of the biggest challenges at Rebellions was the lack of a unified **product narrative**. With multiple stakeholders creating content independently, inconsistencies arose in tone, messaging, and clarity. To fix this, I led the creation of a **Product Narrative Sheet**, working closely with engineers, marketing, and leadership. \n\n### **What I Did**\n- Consolidated existing product messaging to **ensure consistency**.\n- Aligned technical, business, and marketing teams under a **single content direction**.\n- Introduced a streamlined workflow, reducing content review cycles by **30%**.\n\n### **Impact**\n✅ Improved content clarity across marketing materials, white papers, and website copy.  \n✅ Faster approval process, as all stakeholders aligned on messaging from the start.  \n✅ A structured **reference document** for engineers and marketing teams to use moving forward."
+      },
+      {
+        "title": "My Technical Writing Philosophy",
+        "slug": "tech-writing-style",
+        "tags": [
+          "technical writing",
+          "best practices",
+          "writing style"
+        ],
+        "body": "# ✍️ My Technical Writing Philosophy\n\n## 🏆 My Core Writing Principles\n1. **🧩 Clarity First** – No unnecessary jargon.\n2. **🎨 UI/UX Matters** – Good documentation is **designed well**.\n3. **🛠️ Developer-Centric** – Docs should **solve problems**.\n\n## ✍️ Writing Process\n| Step | Description |\n|------|------------|\n| **Research** | Understand the product & audience |\n| **Structure** | Plan clear sections & headings |\n| **Write** | Keep content simple, active voice |\n| **Test & Revise** | Get feedback from engineers & users |\n\n## 🚀 Writing Tools\n✅ **Markdown & Docusaurus**  \n✅ **API Blueprint for API Docs**  \n✅ **Figma for Visuals**"
       }
     ]
   },
   {
-    "category": "문제 해결",
+    "category": "🚀 Career & Learning Journey",
     "faqs": [
       {
-        "title": "자꾸 버그가 생기는데요",
-        "slug": "bug-issues",
+        "title": "Career & Learning Journey",
+        "slug": "career",
         "tags": [
-          "troubleshooting",
-          "debugging",
-          "bug report"
+          "career",
+          "tech industry",
+          "learning",
+          "self-improvement"
         ],
-        "body": "While we run tests covering most conceivable situations before release, bugs still happen.\nSend us a file of Debug Dump Binaries (DDBs) so that we can provide technical support. The DDB file is safely encrypted and includes all the compilation steps and error logs. </br></br>\n\nPlease contact our <a href=\"mailto:support@rebellions.ai\" class=\"underline\">Technical Support Team</a>."
+        "body": "# 🚀 Career & Learning Journey\n\n## 🔥 From Translator to Tech & DevRel\nMy journey started in **interpretation & translation**, but my curiosity led me into **technical writing, frontend development, and DevRel**.\n\nI transitioned into **AI documentation**, where I worked on **AI accelerators, compilers, and large-scale API docs**. Now, I create engaging, developer-friendly documentation and work on **community building**.\n\n## 📚 What I’m Learning Now\n- **JavaScript for frontend enhancements**.\n- **Building & scaling developer communities**.\n- **Advanced DevRel strategies**.\n\n## 🌟 Future Goals\n- **Create Online Courses** for new tech writers.\n- **Develop More DevRel Content** (blogs, tutorials, events).\n- **Expand My Frontend Skills** with React & Next.js.\n\n---\n💡 **Career Tip:**  \n*\"Always stay adaptable. The best skills are the ones that help you evolve.\"* 🚀"
       }
     ]
   },
   {
-    "category": "제품",
+    "category": "🛠️ Tools, Writing & Development Process",
     "faqs": [
       {
-        "title": "훈련도 되나요?",
-        "slug": "training-support",
+        "title": "Tools, Writing & Development Process",
+        "slug": "process",
         "tags": [
-          "training",
-          "inference",
-          "model training"
+          "tools",
+          "API documentation",
+          "DevRel",
+          "workflow"
         ],
-        "body": "현재로서는 추론만 지원하고 있습니다. 향후 훈련 지원이 되면 공지할 계획입니다."
-      },
+        "body": "# 🛠️ My Process: Writing, Development & Community Building\n\n## ✍️ Writing Process\nI ensure my documentation follows **three key principles**:\n1. **🔎 Clarity** – Simple, structured, and easy to read.\n2. **💡 Developer-Friendly** – Code samples, best practices.\n3. **🎨 Engaging** – Well-designed UI, interactivity.\n\n## 🚀 My Developer Workflow\nI use a **content-first approach** when writing **technical documentation**:\n- **Step 1:** Research & prototype.\n- **Step 2:** Write structured documentation.\n- **Step 3:** Add visuals, UI/UX elements.\n- **Step 4:** Test & improve through DevRel feedback.\n\n## 🔧 Favorite Tools\n| Category      | Tools |\n|--------------|----------------|\n| **Docs**     | Markdown, API Blueprint, Notion |\n| **Frontend** | TailwindCSS, AlpineJS, Figma |\n| **DevRel**   | Discord, Twitter, GitHub |\n| **APIs**     | Postman, Swagger, OpenAPI |"
+      }
+    ]
+  },
+  {
+    "category": "📑 My Projects & Tech Stack",
+    "faqs": [
       {
-        "title": "REBEL은 무엇인가요?",
-        "slug": "what-is-rebel",
+        "title": "My Projects & Tech Stack",
+        "slug": "projects",
         "tags": [
-          "REBEL",
-          "chiplet",
-          "NPU",
-          "hardware"
+          "projects",
+          "tech stack",
+          "development",
+          "JavaScript",
+          "GitHub"
         ],
-        "body": "리벨리온에서 개발 중인 칩렛 구조의 AI 추론용 NPU로, 근시일 내 출시 예정입니다."
+        "body": "# 📑 My Projects & Tech Stack\n\n## 🛠️ Featured Projects\n\n### 📌 **FAQ Portfolio (This Project)**\n- **🛠️ Stack:** TailwindCSS, JavaScript, AlpineJS.\n- **🎯 Purpose:** A dynamic, interactive **FAQ-style portfolio**.\n- **🚀 Features:** Active category states, responsive UI, structured content.\n\n### 🧩 **Chrome Extension: Word Saver**\n- **🛠️ Stack:** JavaScript, Chrome API (Manifest V3).\n- **🎯 Purpose:** A **tool for language learners** to save words while browsing.\n- **📂 GitHub:** [Word Saver](https://github.com/jiwon-lieb/chrome-extension)\n\n### 🌦️ **Weather App with AI Pep Talks**\n- **🛠️ Stack:** JavaScript, OpenWeather API, Hugging Face API.\n- **🎯 Purpose:** **Combines weather + AI-generated motivational messages**.\n- **📂 GitHub:** [Weather Pep Talk](https://github.com/jiwon-lieb/weather-pep-talk)\n\n## ⚙️ **Tech Stack**\n| Category         | Tools & Languages |\n|-----------------|------------------|\n| **Frontend**    | JavaScript, HTML, TailwindCSS |\n| **Docs & APIs** | Markdown, Docusaurus, API Blueprint |\n| **DevOps**      | GitHub Actions, CI/CD Pipelines |\n| **Other**       | Postman, Figma, Chrome Extensions |\n\n🔗 **More Projects on GitHub:** [jiwon-lieb](https://github.com/jiwon-lieb)"
       }
     ]
   }

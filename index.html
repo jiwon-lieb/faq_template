@@ -95,8 +95,8 @@
       type="submit" 
       x-bind:disabled="searchQuery.length === 0" 
       x-bind:class="searchQuery.length > 0 
-      ? 'bg-[#C19A92] border-[#A67F74] text-[#FFF5F0] hover:bg-[#D8BFB2] hover:text-[#3B2F2F] transition-all' 
-      : 'bg-[#E5C1B3] border-[#D8BFB2] text-[#A67F74] cursor-not-allowed'"
+      ? 'bg-[#F48FB1] border-[#A67F74] text-[#FFF5F0] hover:bg-[#F06292] hover:text-[#FFF] transition-all' 
+      : 'bg-transparent border-[#D8BFB2] text-[#A67F74] cursor-not-allowed'"
     class="w-full max-w-xs px-6 py-3 rounded-full shadow-md font-semibold text-lg transition-all">
       🔍 Search
   </button>
@@ -115,10 +115,19 @@
 
     <!-- CTA Buttons -->
     <div class="flex space-x-6">
-      <a href="/faq" class="px-6 py-3 bg-[#E6AFA3] text-[#FFF5F0] border-2 border-[#C19A92] rounded-full shadow-md font-semibold transition-all hover:bg-[#C19A92] hover:border-[#A67F74] hover:text-[#3B2F2F] hover:shadow-lg hover:-translate-y-0.5">
+      <!-- About Me Button (Pastel Sky Blue) -->
+      <a href="/faq" 
+      class="px-6 py-3 bg-[#F8BBD0] text-[#3B2F2F] border-2 border-[#F48FB1] rounded-full shadow-md font-semibold transition-all 
+      hover:bg-[#F48FB1] hover:text-[#FFF5F0] hover:border-[#EC407A] hover:shadow-lg hover:-translate-y-0.5 
+      focus:ring-4 focus:ring-[#FCC9DA] focus:ring-offset-2 active:scale-105 active:bg-[#EC407A]">
         📖 About me
       </a>
-      <a href="mailto:contact@jiwonkwak.co" class="px-6 py-3 bg-[#F8D7D0] text-[#3B2F2F] border-2 border-[#E5C1B3] rounded-full shadow-md font-semibold transition-all hover:bg-[#D8BFB2] hover:border-[#C19A92] hover:shadow-lg hover:-translate-y-0.5">
+    
+      <!-- Contact Me Button (Soft Blush Pink) -->
+      <a href="mailto:contact@jiwonkwak.co" 
+        class="px-6 py-3 bg-[#F8BBD0] text-[#3B2F2F] border-2 border-[#F48FB1] rounded-full shadow-md font-semibold transition-all 
+        hover:bg-[#F48FB1] hover:text-[#FFF5F0] hover:border-[#EC407A] hover:shadow-lg hover:-translate-y-0.5 
+        focus:ring-4 focus:ring-[#FCC9DA] focus:ring-offset-2 active:scale-105 active:bg-[#EC407A]">
         📨 Contact me
       </a>
     </div>
