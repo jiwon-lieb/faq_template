@@ -1,25 +1,31 @@
 ---
-title: "Career & Learning Journey"
+title: "커리어"
 slug: "career"
-category: "Career Journey"
+category: "커리어"
 tags: ["career", "tech industry", "learning", "self-improvement"]
 ---
-# Career & Learning Journey
+## 번역에서 테크로
 
-## From Translator to Tech & DevRel
-My journey started in **interpretation & translation**, but my curiosity led me into **technical writing, frontend development**.
+제 커리어는 통·번역에서 시작되었지만, 기술 문서 작성과 프론트엔드 개발에 대한 호기심이 저를 새로운 길로 이끌었습니다.
 
-I transitioned into **AI documentation**, where I worked on **AI accelerators, compilers, and large-scale API docs**. Now, I am delving deeper into different tools and web programming to create engaging, developer-friendly documentation.
+AI 업계로 전향한 후, AI 가속기, 컴파일러, 대규모 API 문서를 다루며 기술 문서화의 깊이를 더했습니다. 이제는 개발자 친화적인 문서를 만들기 위해 다양한 도구와 웹 프로그래밍을 더욱 깊이 탐구하고 있습니다.
 
-## What I’m Learning Now
-- **JavaScript for frontend enhancements**.
-- **Static Site Generators**
+## 현재 배우고 있는 것
+- 프론트엔드 개선을 위한 JavaScript
+- 정적 사이트 생성기(Static Site Generators) 활용
 
-## Future Goals
-- **Create Online Courses** for new tech writers.
-- **Develop More DevRel Content** (blogs, tutorials, events).
-- **Expand My Frontend Skills** with React & Next.js.
+## 향후 목표
 
----
-💡 **Career Tip:**  
-*"Always stay adaptable. The best skills are the ones that help you evolve."* 🚀
+- 온라인 기술 문서 작성 강의 제작
+- DevRel 콘텐츠 확장 (블로그, 튜토리얼, 이벤트 등)
+- 프론트엔드 역량 강화 → React & Next.js 학습
+
+## 업무 방식
+
+저는 빠르게 적응하고, 주도적으로 문제를 해결하는 것을 가장 중요하게 생각합니다.
+기술이 끊임없이 변화하는 만큼, 새로운 지식을 배우고 적용하는 능력이 필수적이라고 믿어요.
+
+- 효율성 중시 → 불필요한 복잡성을 줄이고 핵심만 전달하는 문서화
+- 사용자 중심 사고 → 개발자들이 직관적으로 이해하고 활용할 수 있는 문서 작성
+- 지속적인 성장 → 도전적인 프로젝트를 통해 꾸준히 스킬 업그레이드
+- 협력과 소통 → 협조, 팀워크, 시너지를 위한 투명한 소통

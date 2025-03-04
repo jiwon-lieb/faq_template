@@ -1,9 +1,9 @@
 [
   {
-    "category": "About Me & Work",
+    "category": "소개",
     "faqs": [
       {
-        "title": "About Me & My Work",
+        "title": "자기소개",
         "slug": "about-me",
         "tags": [
           "technical writing",
@@ -12,45 +12,24 @@
           "multilingual",
           "career"
         ],
-        "body": "<h1>About Me &amp; My Work</h1>\n<h2>Who Am I?</h2>\n<p>I&#39;m <strong>Jiwon Kwak</strong>, a **technical writer. My background in <strong>API documentation, content creation, content strategy and multilingual communication</strong> makes me a <strong>bridge between technical teams and their audience</strong>.</p>\n<p>I&#39;ve worked on <strong>cutting-edge AI chips, DevRel community projects, and frontend UI development</strong>, ensuring that <strong>complex technologies are easy to understand and use</strong>.</p>\n<h2>My Specialties</h2>\n<ul>\n<li><strong>Technical Writing</strong> – white papers (AI accelerators), style guide, brand manual, SDK/API docs etc.</li>\n<li><strong>Frontend Development</strong> – Interactive documentation, UI/UX design.</li>\n<li><strong>Multilingual Expertise</strong> – English, German, Korean, French.</li>\n</ul>\n<p><strong>Personal Website:</strong> <a href=\"https://jiwonkwak.co\">jiwonkwak.co</a><br><strong>Contact:</strong> <a href=\"mailto:contact@jiwonkwak.co\">contact@jiwonkwak.co</a></p>\n"
+        "body": "<h2>Who Am I?</h2>\n<p>안녕하세요! 저는 **기술문서 작성(Technical Writing)**을 전문으로 하는 곽지원입니다.</p>\n<p>API 문서화, 콘텐츠 전략, 다국어 커뮤니케이션 역량을 바탕으로 기술팀과 사용자 사이의 가교 역할을 하고 있습니다.</p>\n<p>최신 AI 칩, DevRel 커뮤니티 프로젝트, 프론트엔드 UI 개발과 같은 다양한 분야에서 작업한 경험이 있고, 복잡한 기술을 쉽고 직관적으로 전달하는 것을 목표로 합니다.</p>\n<h2>My Specialties</h2>\n<ul>\n<li>기술문서 작성 – AI 가속기 관련 백서, 스타일 가이드, 브랜드 매뉴얼, SDK/API 문서 등</li>\n<li>프론트엔드 개발 – 인터랙티브 문서, UI/UX 디자인</li>\n<li>다국어 커뮤니케이션 – 영어, 독일어, 한국어, 프랑스어</li>\n</ul>\n<h2>Kakao 맞춤형 포트폴리오</h2>\n<p>이 사이트는 카카오 지원을 위해 Eleventy, TailwindCSS와 Markdown을 활용하여 직접 개발한 포트폴리오 사이트입니다.\n업무로 만든 FAQ 페이지를 제 포트폴리오로 개조했습니다. 콘텐츠 관리 구조도 포함되어 있습니다.</p>\n<h3>사용한 기술 스택:</h3>\n<ul>\n<li>TailwindCSS – 빠르고 유연한 UI 스타일링</li>\n<li>Markdown &amp; Git – 효율적인 문서 작성 및 버전 관리</li>\n<li>JavaScript – FAQ 검색 기능 및 인터랙티브 요소 구현</li>\n</ul>\n<p>📎 개인 웹사이트: <a href=\"https://jiwonkwak.co\">링크</a></p>\n<p>📩 연락처: <a href=\"mailto:contact@jiwonkwak.co\">메일 주세요!</a></p>\n<p>✨ 카카오에 적합한 기술문서 작성과 UI 개선에 기여할 준비가 되어 있습니다!</p>\n"
       },
       {
-        "title": "API Documentation Course",
-        "slug": "api-doc-course",
+        "title": "MBTI Pep Talk API 문서",
+        "slug": "api-doc",
         "tags": [
           "API documentation",
-          "education",
-          "course"
+          "API"
         ],
-        "body": "<h1>MBTI Pep Talk API Documentation</h1>\n<h2>How I Built the MBTI Pep Talk API</h2>\n<p>The MBTI Pep Talk API started as a weekend project to explore API documentation and improve my understanding of backend development. It evolved into a full-fledged API that provides motivational pep talks based on MBTI personality types and moods, supporting multiple languages and structured documentation.</p>\n<h2>How It Started</h2>\n<p>As a technical writer, I wanted to work with APIs beyond just documenting them. So, I decided to build my own API from scratch. At first, I used Netlify Functions for a basic GET request, but soon realized I needed a more scalable and structured backend.</p>\n<h2>Tech Stack &amp; Features</h2>\n<ul>\n<li>Django REST Framework (DRF) + SQL: API development and data base</li>\n<li>CRUD Operations: New pep talks can be added, modified, or deleted</li>\n<li>Multi-language Support (English &amp; Korean): users can toggle between languages</li>\n<li>Deployed on a Cloud Server</li>\n</ul>\n<h2>Writing the API Documentation (GitBook)</h2>\n<p>Once the API was functional, I focused on API documentation to make it developer-friendly. I used GitBook to create a structured and interactive documentation hub.</p>\n<h3>Key Documentation Elements</h3>\n<ul>\n<li>Endpoints &amp; Parameters: Clear request/response formats</li>\n<li>Authentication: API key-based access for modifying content</li>\n<li>Example Requests: Postman examples for testing</li>\n<li>Usage Guidelines: Best practices for integrating the API</li>\n</ul>\n<p>📌 Check out the API Docs here: []</p>\n<h2>Final Takeaways &amp; GitHub Repo</h2>\n<p>This project helped me improve both my backend and technical writing skills. Creating an API from scratch gave me a deeper understanding of the developer’s perspective, making me a better API writer.</p>\n<p>🔗 GitHub Repo (API): []</p>\n<p>If you’re interested in API documentation or want to try writing your own API docs, feel free to fork the repo and experiment!</p>\n"
-      },
-      {
-        "title": "Product Narrative & Content Strategy",
-        "slug": "product-narrative",
-        "tags": [
-          "technical writing",
-          "content strategy",
-          "product narrative"
-        ],
-        "body": "<h2>Defining a Clear Narrative for Rebellions</h2>\n<p>One of the biggest challenges at Rebellions was the lack of a unified <strong>product narrative</strong>. With multiple stakeholders creating content independently, inconsistencies arose in tone, messaging, and clarity. To fix this, I led the creation of a <strong>Product Narrative Sheet</strong>, working closely with engineers, marketing, and leadership. </p>\n<h3><strong>What I Did</strong></h3>\n<ul>\n<li>Consolidated existing product messaging to <strong>ensure consistency</strong>.</li>\n<li>Aligned technical, business, and marketing teams under a <strong>single content direction</strong>.</li>\n<li>Introduced a streamlined workflow, reducing content review cycles.</li>\n</ul>\n<h3><strong>Impact</strong></h3>\n<p>✅ Improved content clarity across marketing materials, white papers, and website copy.<br>✅ Faster approval process, as all stakeholders aligned on messaging from the start.<br>✅ A structured <strong>reference document</strong> for engineers and marketing teams to use moving forward.</p>\n"
-      },
-      {
-        "title": "My Technical Writing Philosophy",
-        "slug": "tech-writing-style",
-        "tags": [
-          "technical writing",
-          "best practices",
-          "writing style"
-        ],
-        "body": "<h1>My Technical Writing Philosophy and Work Style</h1>\n<h2>My Core Writing Principles</h2>\n<ol>\n<li>** Clarity First** – No unnecessary jargon.</li>\n<li>** UI/UX Matters** – Good documentation is <strong>designed well</strong>.</li>\n<li>** Developer-Centric** – Docs should <strong>solve problems</strong>.</li>\n</ol>\n<h2>Writing Process</h2>\n<table>\n<thead>\n<tr>\n<th>Step</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Research</strong></td>\n<td>Understand the product &amp; audience</td>\n</tr>\n<tr>\n<td><strong>Structure</strong></td>\n<td>Plan clear sections &amp; headings</td>\n</tr>\n<tr>\n<td><strong>Write</strong></td>\n<td>Keep content simple, active voice</td>\n</tr>\n<tr>\n<td><strong>Test &amp; Revise</strong></td>\n<td>Get feedback from engineers &amp; users</td>\n</tr>\n</tbody></table>\n"
+        "body": "<h2>MBTI Pep Talk API 문서</h2>\n<h3>MBTI Pep Talk API를 만든 이유</h3>\n<p>MBTI Pep Talk API는 API 문서를 작성하는 것뿐만 아니라 백엔드 개발을 직접 경험하고 싶어 시작한 주말 프로젝트였습니다.\n처음에는 간단한 기능만 구현했지만, 점점 발전하여 MBTI 성격 유형과 감정 상태에 맞춘 맞춤형 응원 메시지를 제공하는 API로 확장되었습니다.</p>\n<p>현재는 다국어 지원과 체계적인 문서화까지 갖춘 완전한 API 서비스로 자리 잡았습니다.</p>\n<h3>프로젝트 시작: 어떻게 만들었을까?</h3>\n<p>기술문서 작성자로서 API를 단순히 문서화하는 것을 넘어 직접 다뤄보고 싶다는 생각이 들었습니다.\n그래서 제로부터 API를 직접 만들어보기로 결정했죠.</p>\n<h4>초기 구현 (Netlify Functions 활용)</h4>\n<p>처음에는 Netlify Functions를 사용해 단순한 GET 요청을 처리하는 방식으로 시작했습니다. 하지만 확장성과 구조적인 백엔드가 필요하다는 걸 깨닫고, Django REST Framework(DRF) 기반으로 다시 구축했습니다.</p>\n<h4>기술 스택 &amp; 주요 기능</h4>\n<ul>\n<li>Django REST Framework(DRF) + SQL → API 개발 및 데이터베이스 관리</li>\n<li>CRUD 기능 지원 → 새로운 응원 메시지를 추가/수정/삭제 가능</li>\n<li>다국어 지원 (영어 &amp; 한국어) → 사용자들이 원하는 언어를 선택 가능</li>\n<li>클라우드 서버에 배포 → 실제 서비스처럼 동작</li>\n</ul>\n<h4>API 문서화 (GitBook 활용)</h4>\n<p>API 개발 후, 가장 중요한 작업은 개발자가 쉽게 이해하고 활용할 수 있도록 문서를 작성하는 것이었습니다.\nGitBook을 활용해 구조화된 API 문서 허브를 만들었습니다.</p>\n<h4>문서의 핵심 요소</h4>\n<ul>\n<li>엔드포인트 &amp; 파라미터 정리 → 요청/응답 형식 명확화</li>\n<li>인증(Authentication) 방식 → API 키를 이용한 콘텐츠 수정 기능</li>\n<li>Postman 예제 요청 → 개발자가 쉽게 테스트 가능하도록 샘플 제공</li>\n<li>사용 가이드 → API를 효과적으로 통합하는 모범 사례 포함</li>\n</ul>\n<p>📌 API 문서 보러 가기 → <a href=\"https://techwriting-project.gitbook.io/mbti-peptalk-api-docs/mbti-api\">GitBook</a></p>\n<blockquote>\n<p>주말마다 API 업데이트 중이라, 엄밀히 말하면 아직 작업 중인 점 양해 부탁드립니다.</p>\n</blockquote>\n<h3>프로젝트를 통해 배운 점 &amp; GitHub 저장소</h3>\n<p>이 프로젝트를 통해 백엔드 개발에 대한 실무적인 이해를 높이고, 더 나은 API 문서 작성자가 되는 경험을 할 수 있었습니다.\nAPI를 처음부터 직접 만들어 본 덕분에, 개발자의 관점에서 API 문서를 어떻게 작성해야 하는지 깊이 고민할 수 있었어요.</p>\n<p>🔗 GitHub Repo (API) → <a href=\"https://github.com/jiwon-lieb/mbti_peptalk\">GitHub</a></p>\n"
       }
     ]
   },
   {
-    "category": "Career Journey",
+    "category": "커리어",
     "faqs": [
       {
-        "title": "Career & Learning Journey",
+        "title": "커리어",
         "slug": "career",
         "tags": [
           "career",
@@ -58,31 +37,15 @@
           "learning",
           "self-improvement"
         ],
-        "body": "<h1>Career &amp; Learning Journey</h1>\n<h2>From Translator to Tech &amp; DevRel</h2>\n<p>My journey started in <strong>interpretation &amp; translation</strong>, but my curiosity led me into <strong>technical writing, frontend development</strong>.</p>\n<p>I transitioned into <strong>AI documentation</strong>, where I worked on <strong>AI accelerators, compilers, and large-scale API docs</strong>. Now, I am delving deeper into different tools and web programming to create engaging, developer-friendly documentation.</p>\n<h2>What I’m Learning Now</h2>\n<ul>\n<li><strong>JavaScript for frontend enhancements</strong>.</li>\n<li><strong>Static Site Generators</strong></li>\n</ul>\n<h2>Future Goals</h2>\n<ul>\n<li><strong>Create Online Courses</strong> for new tech writers.</li>\n<li><strong>Develop More DevRel Content</strong> (blogs, tutorials, events).</li>\n<li><strong>Expand My Frontend Skills</strong> with React &amp; Next.js.</li>\n</ul>\n<hr>\n<p>💡 <strong>Career Tip:</strong><br><em>&quot;Always stay adaptable. The best skills are the ones that help you evolve.&quot;</em> 🚀</p>\n"
+        "body": "<h2>번역에서 테크로</h2>\n<p>제 커리어는 통·번역에서 시작되었지만, 기술 문서 작성과 프론트엔드 개발에 대한 호기심이 저를 새로운 길로 이끌었습니다.</p>\n<p>AI 업계로 전향한 후, AI 가속기, 컴파일러, 대규모 API 문서를 다루며 기술 문서화의 깊이를 더했습니다. 이제는 개발자 친화적인 문서를 만들기 위해 다양한 도구와 웹 프로그래밍을 더욱 깊이 탐구하고 있습니다.</p>\n<h2>현재 배우고 있는 것</h2>\n<ul>\n<li>프론트엔드 개선을 위한 JavaScript</li>\n<li>정적 사이트 생성기(Static Site Generators) 활용</li>\n</ul>\n<h2>향후 목표</h2>\n<ul>\n<li>온라인 기술 문서 작성 강의 제작</li>\n<li>DevRel 콘텐츠 확장 (블로그, 튜토리얼, 이벤트 등)</li>\n<li>프론트엔드 역량 강화 → React &amp; Next.js 학습</li>\n</ul>\n<h2>업무 방식</h2>\n<p>저는 빠르게 적응하고, 주도적으로 문제를 해결하는 것을 가장 중요하게 생각합니다.\n기술이 끊임없이 변화하는 만큼, 새로운 지식을 배우고 적용하는 능력이 필수적이라고 믿어요.</p>\n<ul>\n<li>효율성 중시 → 불필요한 복잡성을 줄이고 핵심만 전달하는 문서화</li>\n<li>사용자 중심 사고 → 개발자들이 직관적으로 이해하고 활용할 수 있는 문서 작성</li>\n<li>지속적인 성장 → 도전적인 프로젝트를 통해 꾸준히 스킬 업그레이드</li>\n<li>협력과 소통 → 협조, 팀워크, 시너지를 위한 투명한 소통</li>\n</ul>\n"
       }
     ]
   },
   {
-    "category": "Tools & Process",
+    "category": "프로젝트",
     "faqs": [
       {
-        "title": "Tools, Writing & Development Process",
-        "slug": "process",
-        "tags": [
-          "tools",
-          "API documentation",
-          "DevRel",
-          "workflow"
-        ],
-        "body": "<h1>My Process: Writing, Development</h1>\n<h2>Writing Process</h2>\n<p>I ensure my documentation follows <strong>three key principles</strong>:</p>\n<ol>\n<li><strong>🔎 Clarity</strong> – Simple, structured, and easy to read.</li>\n<li><strong>💡 Developer-Friendly</strong> – Code samples, best practices.</li>\n<li><strong>🎨 Engaging</strong> – Well-designed UI, interactivity.</li>\n</ol>\n<h2>My Developer Workflow</h2>\n<p>I use a <strong>content-first approach</strong> when writing <strong>technical documentation</strong>:</p>\n<ul>\n<li><strong>Step 1:</strong> Research &amp; prototype.</li>\n<li><strong>Step 2:</strong> Write structured documentation.</li>\n<li><strong>Step 3:</strong> Add visuals, UI/UX elements.</li>\n<li><strong>Step 4:</strong> Test &amp; improve through feedback.</li>\n</ul>\n<h2>🔧 Favorite Tools</h2>\n<table>\n<thead>\n<tr>\n<th>Category</th>\n<th>Tools</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Docs</strong></td>\n<td>Markdown, SSG (Eleventy, Docusaurus), Notion</td>\n</tr>\n<tr>\n<td><strong>Frontend</strong></td>\n<td>TailwindCSS, AlpineJS, Figma</td>\n</tr>\n<tr>\n<td><strong>APIs</strong></td>\n<td>Postman, Swagger, OpenAPI</td>\n</tr>\n</tbody></table>\n"
-      }
-    ]
-  },
-  {
-    "category": "Projects & Tech",
-    "faqs": [
-      {
-        "title": "My Projects & Tech Stack",
+        "title": "프로젝트",
         "slug": "projects",
         "tags": [
           "projects",
@@ -91,7 +54,7 @@
           "JavaScript",
           "GitHub"
         ],
-        "body": "<h1>My Projects &amp; Tech Stack</h1>\n<h2>Projects</h2>\n<h3><strong>FAQ Portfolio (This Project)</strong></h3>\n<ul>\n<li><strong>Stack:</strong> TailwindCSS, JavaScript, Eleventy, AlpineJS.</li>\n<li><strong>Purpose:</strong> A dynamic, interactive <strong>FAQ-style portfolio</strong>.</li>\n<li><strong>Features:</strong> Active category states, responsive UI, structured content.</li>\n</ul>\n<h3>MBTI Pep Talk API</h3>\n<ul>\n<li><strong>Stack</strong>: Django REST Framework (DRF), PostgreSQL, Netlify Functions (initial version), Deployed on [API Server]</li>\n<li><strong>Purpose</strong>: Provides personalized pep talks based on MBTI personality type and emotional state. Supports English and Korean and CRUD operations.</li>\n<li><strong>GitHub</strong>: [Insert GitHub Link]</li>\n</ul>\n<h3>MBTI Pep Talk App</h3>\n<ul>\n<li><strong>Stack</strong>: HTML, CSS, JavaScript (Vanilla)</li>\n<li><strong>Purpose</strong>: A simple frontend application that fetches pep talks from the API based on user-selected MBTI type and mood. Features real-time language switching and an interactive UI.</li>\n<li><strong>GitHub</strong>: [Insert GitHub Link]</li>\n</ul>\n<h2><strong>Tech Stack</strong></h2>\n<table>\n<thead>\n<tr>\n<th>Category</th>\n<th>Tools &amp; Languages</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Frontend</strong></td>\n<td>JavaScript, HTML, TailwindCSS</td>\n</tr>\n<tr>\n<td><strong>Docs &amp; APIs</strong></td>\n<td>Markdown, Docusaurus, Postman, Eleventy, Mkdocs</td>\n</tr>\n<tr>\n<td><strong>DevOps</strong></td>\n<td>GitHub Actions, CI/CD Pipelines</td>\n</tr>\n<tr>\n<td><strong>Other</strong></td>\n<td>Postman, Figma</td>\n</tr>\n</tbody></table>\n<p>🔗 <strong>More Projects on GitHub:</strong> <a href=\"https://github.com/jiwon-lieb\">jiwon-lieb</a></p>\n"
+        "body": "<h2>프로젝트 &amp; 기술 스택</h2>\n<h3>FAQ 포트폴리오 (현재 프로젝트)</h3>\n<ul>\n<li>스택: TailwindCSS, JavaScript, Eleventy, AlpineJS</li>\n<li>목적: 동적이고 인터랙티브한 FAQ 스타일 포트폴리오</li>\n<li>특징: 활성 카테고리 상태 유지, 반응형 UI, 구조화된 콘텐츠 제공</li>\n</ul>\n<h3>MBTI Pep Talk API</h3>\n<ul>\n<li>스택: Django REST Framework (DRF), SQL, Netlify Functions(초기 버전)</li>\n<li>목적: MBTI 성격 유형과 감정 상태에 따른 맞춤형 응원 메시지 제공.</li>\n<li>영어 &amp; 한국어 지원, CRUD 기능 구현</li>\n<li>GitHub: GitBook</li>\n</ul>\n<h3>MBTI Pep Talk 앱</h3>\n<ul>\n<li>스택: HTML, CSS, JavaScript (Vanilla)</li>\n<li>목적: API에서 사용자 선택에 맞는 응원 메시지를 불러오는 프론트엔드 앱</li>\n<li>실시간 언어 전환 기능, 인터랙티브 UI 제공</li>\n<li>사이트: MBTI Pep Talk</li>\n</ul>\n<h3>기술 스택</h3>\n<table>\n<thead>\n<tr>\n<th><strong>카테고리</strong></th>\n<th><strong>사용 기술</strong></th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>프론트엔드</strong></td>\n<td>JavaScript, HTML, TailwindCSS</td>\n</tr>\n<tr>\n<td><strong>문서 &amp; API</strong></td>\n<td>Markdown, Docusaurus, Postman, Eleventy, Mkdocs</td>\n</tr>\n<tr>\n<td><strong>DevOps</strong></td>\n<td>GitHub Actions, CI/CD Pipelines</td>\n</tr>\n<tr>\n<td><strong>기타</strong></td>\n<td>Postman, Figma</td>\n</tr>\n</tbody></table>\n<p>🔗 더 많은 프로젝트 보기: <a href=\"https://github.com/jiwon-lieb/mbti_peptalk\">GitHub</a></p>\n"
       }
     ]
   }
