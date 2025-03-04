@@ -6,7 +6,7 @@ tags: ["technical writing", "DevRel", "frontend", "multilingual", "career"]
 ---
 ## Who Am I?
 
-안녕하세요! 저는 **기술문서 작성(Technical Writing)**을 전문으로 하는 곽지원입니다.
+안녕하세요! 저는 기술문서 작성(Technical Writing)을 전문으로 하는 곽지원입니다.
 
 API 문서화, 콘텐츠 전략, 다국어 커뮤니케이션 역량을 바탕으로 기술팀과 사용자 사이의 가교 역할을 하고 있습니다.
 
