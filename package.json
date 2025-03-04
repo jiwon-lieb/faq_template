@@ -1,7 +1,7 @@
 {
-  "name": "rbln_cs",
+  "name": "faq_portfolio",
   "version": "1.0.0",
-  "description": "Rebellions customer support page",
+  "description": "faq_template",
   "main": "index.js",
   "author": "Jiwon Kwak",
   "license": "MIT",
